@@ -1,26 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Oblečení"
+    "name": "Oblečení",
+    "itemIds": []
   },
   {
     "id": 2,
-    "name": "Vše pro děti"
+    "name": "Vše pro děti",
+    "itemIds": [6]
   },
   {
     "id": 3,
-    "name": "Vše pro domácnost"
+    "name": "Vše pro domácnost",
+    "itemIds": [7]
   },
   {
     "id": 4,
-    "name": "Květiny"
+    "name": "Květiny",
+    "itemIds": [9]
   },
   {
     "id": 5,
-    "name": "Knihy"
+    "name": "Knihy",
+    "itemIds": [1, 2, 3, 4, 5]
   },
   {
     "id": 6,
-    "name": "Ostatní"
+    "name": "Ostatní",
+    "itemIds": [8]
   }
 ]
