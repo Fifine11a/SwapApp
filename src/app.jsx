@@ -12,10 +12,7 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/nabidka/detail_produktu">
-          <ItemDetailPage />
-        </Route>
-        <Route path="/nabidka/detail_kategorie">
+        <Route path="/nabidka/:id">
           <CategoryDetailPage />
         </Route>
         <Route path="/nabidka">

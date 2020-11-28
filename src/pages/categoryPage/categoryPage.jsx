@@ -10,14 +10,21 @@ const MainCategory = (props) => {
       </div>
       <Search />
       <div className="categoryBtn">
-        <button className="category searchCategoryClothes">Oblečení</button>
+        <Link className="category searchCategoryClothes" to="/category1">
+          Oblečení
+        </Link>
+        <Link className="category searchCategoryKids" to="/category2">
+          Vše pro děti
+        </Link>
+
+        {/* <button className="category searchCategoryClothes">Oblečení</button>
         <button className="category searchCategoryKids">Vše pro děti</button>
         <button className="category searchCategoryHouse">
           Vše pro domácnost
         </button>
         <button className="category searchCategoryPlants">Květiny</button>
         <button className="category searchCategoryBooks">Knihy</button>
-        <button className="category searchCategoryOthers">Ostatní</button>
+        <button className="category searchCategoryOthers">Ostatní</button> */}
       </div>
     </div>
   );
