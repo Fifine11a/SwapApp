@@ -1,0 +1,116 @@
+fieldset {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 40px;
+  background: #fff;
+  border: solid 2px #212529;
+  border-radius: 4px;
+}
+.searchAndInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.infoBtn {
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  background-color: #dee2e6;
+}
+.infoBtn:hover {
+  background-color: #ec6333;
+}
+.questionMark {
+  height: 2.5rem;
+}
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+.searchInput,
+.searchBtn {
+  position: relative;
+  width: 12rem;
+  height: 3rem;
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+
+.searchInput {
+  color: #212529;
+  z-index: 2;
+  border: 0 none;
+  font-size: 1.4rem;
+}
+.searchInput:focus {
+  outline: 0 none;
+}
+.searchInput:focus + .searchBtn {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.searchInput:focus + .searchBtn .fa {
+  -webkit-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #fff;
+}
+
+.searchBtn {
+  z-index: 1;
+  width: 50px;
+  border: 0 none;
+  background: #ec6333;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  -webkit-transform: translate(-50px, 0);
+  -ms-transform: translate(-50px, 0);
+  transform: translate(-50px, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  box-sizing: border-box;
+}
+
+.fa-search {
+  font-size: 1.4rem;
+  color: #212529;
+  z-index: 3;
+  top: 25%;
+  -webkit-transform: translate(-190px, 0);
+  -ms-transform: translate(-190px, 0);
+  transform: translate(-190px, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.searchInput + .searchBtn .fa {
+  content: url(../img/search.png);
+  height: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .searchInput,
+  .searchBtn {
+    width: 5rem;
+  }
+  .searchBtn {
+    width: 3rem;
+  }
+  .fa-search {
+    transform: translate(-75px, 0);
+  }
+}
+@media screen and (max-width: 322px) {
+  .searchForm {
+    display: none;
+  }
+}

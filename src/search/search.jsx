@@ -1,0 +1,17 @@
+import React from 'react';
+import './search.css';
+
+const Search = () => {
+  return (
+    <form className="searchForm">
+      <fieldset>
+        <input className="searchInput" type="search" />
+        <button className="searchBtn" type="submit">
+          <i className="fa fa-search"></i>
+        </button>
+      </fieldset>
+    </form>
+  );
+};
+
+export default Search;

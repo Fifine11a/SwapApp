@@ -1,5 +1,6 @@
 import React from 'react';
 import './categoryPage.css';
+import Search from '../search/search';
 
 const MainCategory = (props) => {
   return (
@@ -7,14 +8,7 @@ const MainCategory = (props) => {
       <div className="header">
         <h1>Hledám</h1>
       </div>
-      <form className="searchForm">
-        <fieldset>
-          <input className="searchInput" type="search" />
-          <button className="searchBtn" type="submit">
-            <i className="fa fa-search"></i>
-          </button>
-        </fieldset>
-      </form>
+      <Search />
       <div className="categoryBtn">
         <button className="category searchCategoryClothes">Oblečení</button>
         <button className="category searchCategoryKids">Vše pro děti</button>
