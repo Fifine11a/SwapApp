@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemPreview from '../../itemPreview/itemPreview';
-import categories from '../../data/category.json';
-import './styles.css';
 import db from '../../firestore.js';
+
+import './styles.css';
 
 const CategoryDetail = (props) => {
   let { id } = useParams();

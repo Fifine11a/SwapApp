@@ -9,7 +9,7 @@ const HomePage = (props) => {
         <Link className="demandMainBtn" to="/kategorie">
           Hledám
         </Link>
-        <Link className="offerMainBtn" to="/offer">
+        <Link className="offerMainBtn" to="/formular/novy">
           Nabízím
         </Link>
       </div>
