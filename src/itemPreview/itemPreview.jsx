@@ -1,5 +1,6 @@
 import React from 'react';
 import items from '../data/items.json';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const ItemPreview = (props) => {
   const itemPreviewId = props.id;
