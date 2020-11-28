@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 import db from '../../firestore.js';
 import { useParams } from 'react-router-dom';
+import towns from '../../data/towns.json';
 
 const ItemDetail = () => {
   const { id } = useParams();
@@ -19,6 +20,8 @@ const ItemDetail = () => {
     return null;
   }
 
+  const city = towns.find((city) => city.id === parseInt(product.cityId));
+
   return (
     <>
       <div className="itemPage mediaQueries">
@@ -29,7 +32,7 @@ const ItemDetail = () => {
         <div className="itemOfferDetails">
           <img className="itemImg" src={product.imageUrl} />
           <span className="itemTitle">{product.title}</span>
-          <span className="itemLocation">Lokalita: {product.city}</span>
+          <span className="itemLocation">Lokalita: {city.name}</span>
           <span className="itemText">{product.description}</span>
           <span className="exchangeDemand">
             Co chci výměnou: {product.swapDescription}
