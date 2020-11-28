@@ -13,7 +13,7 @@ const HomePage = (props) => {
           Nabízím
         </Link>
       </div>
-      <Link className="itemDetailPage" to="/itemDetailPage">
+      <Link className="itemDetailPage" to="/produkt/1">
         Detail produktu
       </Link>
       <img className="homepageImg" src="img/homepage.jpg" alt="útulný domov" />

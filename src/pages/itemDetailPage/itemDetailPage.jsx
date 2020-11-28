@@ -6,7 +6,6 @@ import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 const ItemDetail = (props) => {
   return (
     <>
-      <Header />
       <div class="itemPage mediaQueries">
         <Breadcrumbs />
         <div class="itemOfferDetails">
@@ -23,7 +22,8 @@ const ItemDetail = (props) => {
           </span>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
+
+export default ItemDetail;
