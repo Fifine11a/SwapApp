@@ -8,21 +8,11 @@ import Header from './header/header.jsx';
 export default function App() {
   return (
     <Router>
-      <div>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/">
+          <HomePage />
+        </Route>
+      </Switch>
 
       <>
         <Header />
