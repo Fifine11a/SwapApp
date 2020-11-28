@@ -1,6 +1,8 @@
 import React from 'react';
 import HomePage from './homePage/homePage';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import MainCategory from './pages/category.jsx';
+import Footer from './footer/footer.jsx';
 
 export default function App() {
   return (
@@ -34,6 +36,11 @@ export default function App() {
           </Route>
         </Switch>
       </div>
+
+      <>
+        <MainCategory />
+        <Footer />
+      </>
     </Router>
   );
 }
