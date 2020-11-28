@@ -1,15 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import ItemPreview from '../../itemPreview/itemPreview';
 import './styles.css';
 
 const category1 = {
   title: 'Detail kategorie',
-  items: [1, 2, 3],
+  itemIds: [1, 2, 3],
 };
 
 const category2 = {
   title: 'Detail kategorie2',
-  items: [1, 2, 3],
+  itemIds: [1, 2, 3],
 };
 
 const CategoryDetail = (props) => {
@@ -28,7 +29,10 @@ const CategoryDetail = (props) => {
         <button>Drobek</button>
       </div>
       <div className="categoryDetailElm">
-        <div className="detailItem">
+        {category.itemIds.map((id) => (
+          <ItemPreview key={id} id={id} />
+        ))}
+        {/* <div className="detailItem">
           <img
             className="itemImg"
             src="img/logo.png"
@@ -38,18 +42,7 @@ const CategoryDetail = (props) => {
           <span className="userNameOffer">
             Jméno nabízejícího s odkazem na mail
           </span>
-        </div>
-        <div className="detailItem">
-          <img
-            className="itemImg"
-            src="img/logo.png"
-            alt="fotografie předmětu"
-          />
-          <span className="itemTitle">Titulek položky</span>
-          <span className="userNameOffer">
-            Jméno nabízejícího s odkazem na mail
-          </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
