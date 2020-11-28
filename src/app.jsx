@@ -13,7 +13,7 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/form/new">
+        <Route path="/formular/novy">
           <NewForm />
         </Route>
         <Route path="/produkt/:id">

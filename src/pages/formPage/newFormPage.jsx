@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import categories from '../../data/category.json';
 
 const NewForm = (props) => {
+  const [name, setName] = useState('');
+
   return (
     <>
       <div class="offerPage mediaQueries">
+        {' '}
+        {JSON.stringify({ name })}
         <div class="header">
           <h1>Nabízím</h1>
         </div>
@@ -17,7 +22,12 @@ const NewForm = (props) => {
             </div>
             <div class="inner-wrap">
               <label>
-                jméno a příjmení <input type="text" name="field1" />
+                jméno a příjmení{' '}
+                <input
+                  type="text"
+                  name="field1"
+                  onChange={(event) => setName(event.target.value)}
+                />
               </label>
               <label>
                 e-mail <input type="email" name="field2" />
@@ -34,18 +44,17 @@ const NewForm = (props) => {
               <label>
                 <div>Kategorie předmětu</div>
                 <div>
-                  <input type="radio" name="field4" value="Oblečení" />
-                  Oblečení
-                  <input type="radio" name="field4" value="Vše pro děti" />
-                  Vše pro děti
-                  <input type="radio" name="field4" value="Vše pro domácnost" />
-                  Vše pro domácnost
-                  <input type="radio" name="field4" value="Květiny" />
-                  Květiny
-                  <input type="radio" name="field4" value="Knihy" />
-                  Knihy
-                  <input type="radio" name="field4" value="Ostatní" checked />
-                  Ostatní
+                  {categories.map((category) => (
+                    <>
+                      <input
+                        type="radio"
+                        id={category.id}
+                        name="field4"
+                        value={category.id}
+                      />
+                      <label htmlFor={category.id}>{category.name}</label>
+                    </>
+                  ))}
                 </div>
               </label>
               <label>

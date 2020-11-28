@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Praha"
+  },
+  {
+    "id": 2,
+    "name": "Brno"
+  },
+  {
+    "id": 3,
+    "name": "České Budějovice"
+  },
+  {
+    "id": 4,
+    "name": "Zlín"
+  },
+  {
+    "id": 5,
+    "name": "Ostrava"
+  },
+  {
+    "id": 6,
+    "name": "Olomouc"
+  },
+  {
+    "id": 7,
+    "name": "Hradec Králové"
+  },
+  {
+    "id": 8,
+    "name": "Plzeň"
+  }
+  {
+    "id": 9,
+    "name": "Liberec"
+  },
+  {
+    "id": 10,
+    "name": "Pardubice"
+  }
+]
