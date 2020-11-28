@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "name": "Harry1",
+    "contact": "hp1@hogwarts.uk",
+    "image": "",
+    "city": "Praha",
+    "title": "kniha1.jpg",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in quasi voluptatem quam quaerat pariatur ullam, unde recusandae magnam sunt consequatur sit corporis deleniti illo esse repellat, non perspiciatis dignissimos.",
+    "exchange": "Chci za knihu Voldemorta"
+  },
+  {
+    "id": 2,
+    "name": "Harry2",
+    "contact": "hp2@hogwarts.uk",
+    "image": "kniha2.jpg",
+    "city": "Praha",
+    "title": "Herák 2",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in quasi voluptatem quam quaerat pariatur ullam, unde recusandae magnam sunt consequatur sit corporis deleniti illo esse repellat, non perspiciatis dignissimos.",
+    "exchange": "Za knihu chci Dobbyho"
+  },
+  {
+    "id": 3,
+    "name": "Harry3",
+    "contact": "hp3@hogwarts.uk",
+    "image": "kniha3.jpg",
+    "city": "Praha",
+    "title": "Herák 3",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in quasi voluptatem quam quaerat pariatur ullam, unde recusandae magnam sunt consequatur sit corporis deleniti illo esse repellat, non perspiciatis dignissimos.",
+    "exchange": "Litr máslového ležáku"
+  },
+  {
+    "id": 4,
+    "name": "Harry4",
+    "contact": "hp4@hogwarts.uk",
+    "image": "kniha4.jpg",
+    "city": "Praha",
+    "title": "Herák 4",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in quasi voluptatem quam quaerat pariatur ullam, unde recusandae magnam sunt consequatur sit corporis deleniti illo esse repellat, non perspiciatis dignissimos.",
+    "exchange": "Potřebuju takový ten kabát, jak v něm nebudu vidět."
+  },
+  {
+    "id": 5,
+    "name": "Harry5",
+    "contact": "hp5@hogwarts.uk",
+    "image": "kniha5.jpg",
+    "city": "Praha",
+    "title": "Herák 5",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in quasi voluptatem quam quaerat pariatur ullam, unde recusandae magnam sunt consequatur sit corporis deleniti illo esse repellat, non perspiciatis dignissimos.",
+    "exchange": "Poptávám trenéra plavání na nadcházející kouzelnický turnaj. Žábry jsme se ještě neučili."
+  },
+  {
+    "id": 6,
+    "name": "kjcashdas",
+    "contact": "kjcashdas@kjcashdas.com",
+    "image": "kjcashdas",
+    "city": "Brno",
+    "title": "Dětské body s dlouhým rukávem",
+    "text": "fkcwinflerfasdjv,hjacavgaleriugfasfgSFVSJKVKAGSŮGIDFKJGVBXBVNBYXC,JVdbvalhldfvsj.nvj.asdbkvjbdfsjvsncbv.jhbaeljfvljfbafdjkhvby",
+    "exchange": "dětské body s krátkým rukávem"
+  },
+  {
+    "id": 7,
+    "name": "Jarda",
+    "contact": "jarda@mail.cz",
+    "image": "Jarda",
+    "city": "Praha",
+    "title": "Vrtačka Bosch",
+    "text": "Doma mi leží vrtačka, i když vůbec nevrtám. Je ještě v krabici. Vrtačka je v perfektním stavu, krabice je zaprášená.",
+    "exchange": "funkční flašinet"
+  },
+  {
+    "id": 8,
+    "name": "paní Králová",
+    "contact": "pani@kralova.mrs",
+    "image": "paní Králová",
+    "city": "Ostrava",
+    "title": "koruna",
+    "text": "Z důvodu abdikace přenechám korunu do dobrých rukou. A na dobrou hlavu.",
+    "exchange": "Bicykl"
+  },
+  {
+    "id": 9,
+    "name": "Poison Ivy",
+    "contact": "ivy@travime_s_radosti.ivy",
+    "image": "Poison Ivy",
+    "city": "Brno",
+    "title": "jedovatá kytka",
+    "text": "Mám na zahradě navíc jednu otravnou otrávenou kytku. Kdo se chcete osypat pěknou kopřivkou, ozvěte se.",
+    "exchange": "Kopřivy"
+  },
+  {
+    "id": 10,
+    "name": "Harry1",
+    "contact": "hp1@hogwarts.uk",
+    "image": "",
+    "city": "Praha",
+    "title": "Herák 1",
+    "exchange": "Chci za knihu Voldemorta"
+  },
+  {
+    "id": 11,
+    "name": "Harry2",
+    "contact": "hp2@hogwarts.uk",
+    "image": "",
+    "city": "Praha",
+    "title": "Herák 2",
+    "exchange": "Za knihu chci Dobbyho"
+  },
+  {
+    "id": 12,
+    "name": "Harry3",
+    "contact": "hp3@hogwarts.uk",
+    "image": "",
+    "city": "Praha",
+    "title": "Herák 3",
+    "exchange": "Litr máslového ležáku"
+  },
+  {
+    "id": 13,
+    "name": "Harry4",
+    "contact": "hp4@hogwarts.uk",
+    "image": "",
+    "city": "Praha",
+    "title": "Herák 4",
+    "exchange": "Potřebuju takový ten kabát, jak v něm nebudu vidět."
+  },
+  {
+    "id": 14,
+    "name": "Harry5",
+    "contact": "hp5@hogwarts.uk",
+    "image": "",
+    "city": "Praha",
+    "title": "Herák 5",
+    "exchange": "Poptávám trenéra plavání na nadcházející kouzelnický turnaj. Žábry jsme se ještě neučili."
+  },
+  {
+    "id": 15,
+    "name": "kjcashdas",
+    "contact": "kjcashdas@kjcashdas.com",
+    "image": "",
+    "city": "Brno",
+    "title": "Dětské body s dlouhým rukávem",
+    "text": "fkcwinflerfasdjv,hjacavgaleriugfasfgSFVSJKVKAGSŮGIDFKJGVBXBVNBYXC,JVdbvalhldfvsj.nvj.asdbkvjbdfsjvsncbv.jhbaeljfvljfbafdjkhvby",
+    "exchange": "dětské body s krátkým rukávem"
+  },
+  {
+    "id": 16,
+    "name": "Jarda",
+    "contact": "jarda@mail.cz",
+    "image": "",
+    "city": "Praha",
+    "title": "Vrtačka Bosch",
+    "text": "Doma mi leží vrtačka, i když vůbec nevrtám. Je ještě v krabici. Vrtačka je v perfektním stavu, krabice je zaprášená.",
+    "exchange": "funkční flašinet"
+  },
+  {
+    "id": 17,
+    "name": "paní Králová",
+    "contact": "pani@kralova.mrs",
+    "image": "",
+    "city": "Ostrava",
+    "title": "koruna",
+    "text": "Z důvodu abdikace přenechám korunu do dobrých rukou. A na dobrou hlavu.",
+    "exchange": "Bicykl"
+  },
+  {
+    "id": 18,
+    "name": "Poison Ivy",
+    "contact": "ivy@travime_s_radosti.ivy",
+    "image": "",
+    "city": "Brno",
+    "title": "jedovatá kytka",
+    "text": "Mám na zahradě navíc jednu otravnou otrávenou kytku. Kdo se chcete osypat pěknou kopřivkou, ozvěte se.",
+    "exchange": "Kopřivy"
+  }
+]
