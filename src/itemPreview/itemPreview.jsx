@@ -1,26 +1,16 @@
 import React from 'react';
-
-const itemPreview1 = {
-  img: 'tady je obrázek',
-  title: 'tady je název',
-  user: 'tady je jméno',
-};
-
-const itemPreview2 = {
-  img: 'tady je obrázek2',
-  title: 'tady je název2',
-  user: 'tady je jméno2',
-};
+import items from '../data/items.json';
 
 const ItemPreview = (props) => {
   const itemPreviewId = props.id;
-  const itemPreview = itemPreviewId === 1 ? itemPreview1 : itemPreview2;
+  const itemPreview = items.find((item) => item.id === itemPreviewId);
 
   return (
     <div className="detailItem">
-      <span>{itemPreview.img}</span>
-      <span>{itemPreview.title}</span>
-      <span>{itemPreview.user}</span>
+      <Link to={`/produkt/${itemPreview.id}`}>{itemPreview.image}</Link>
+      <Link to={`/produkt/${itemPreview.id}`}>{itemPreview.title}</Link>
+      <Link to={`/produkt/${itemPreview.id}`}>{itemPreview.city}</Link>
+      <Link to={`/produkt/${itemPreview.id}`}>{itemPreview.name}</Link>
     </div>
   );
 };

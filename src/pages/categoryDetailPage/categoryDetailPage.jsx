@@ -5,7 +5,7 @@ import './styles.css';
 
 const category1 = {
   title: 'Detail kategorie',
-  itemIds: [1, 2, 3],
+  itemIds: [1, 2, 3, 4, 5, 6, 7, 8],
 };
 
 const category2 = {
@@ -32,17 +32,6 @@ const CategoryDetail = (props) => {
         {category.itemIds.map((id) => (
           <ItemPreview key={id} id={id} />
         ))}
-        {/* <div className="detailItem">
-          <img
-            className="itemImg"
-            src="img/logo.png"
-            alt="fotografie předmětu"
-          />
-          <span className="itemTitle">Titulek položky</span>
-          <span className="userNameOffer">
-            Jméno nabízejícího s odkazem na mail
-          </span>
-        </div> */}
       </div>
     </div>
   );
