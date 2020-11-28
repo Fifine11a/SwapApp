@@ -15,8 +15,6 @@ const ItemPreview = (props) => {
       .then((data) => setItem(data));
   }, [itemPreviewId]);
 
-  console.log(itemPreview);
-
   if (!itemPreview) {
     return null;
   }

@@ -1,12 +1,29 @@
-import React, { useState } from 'react';
-import categories from '../../data/category.json';
+import React, { useEffect, useState } from 'react';
 import towns from '../../data/towns.json';
 import db from '../../firestore.js';
 import { useHistory } from 'react-router-dom';
+import firebase from 'firebase';
 import { v4 as uuid } from 'uuid';
 import './styles.css';
 
 const NewForm = (props) => {
+  const [categories, setCategories] = useState(null);
+
+  useEffect(() => {
+    db.collection('categories')
+      .get()
+      .then((result) =>
+        result.docs.map((e) => {
+          const data = e.data();
+          return {
+            ...data,
+            id: e.id,
+          };
+        }),
+      )
+      .then((data) => setCategories(data));
+  }, []);
+
   const history = useHistory();
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
@@ -16,24 +33,33 @@ const NewForm = (props) => {
   const [title, setTitle] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [categoryId, setCategoryId] = useState('');
-  console.log({ categoryId });
-  const submitForm = (event) => {
+
+  const submitForm = async (event) => {
     event.preventDefault();
     const id = uuid();
-    db.collection('items')
-      .doc(id)
-      .set({
-        userName,
-        email,
-        cityId,
-        swapDescription,
-        description,
-        title,
-      })
-      .then(() => {
-        history.push(`/produkt/${id}`);
+    await db.collection('items').doc(id).set({
+      userName,
+      email,
+      cityId,
+      swapDescription,
+      description,
+      title,
+    });
+
+    await db
+      .collection('categories')
+      .doc(categoryId)
+      .update({
+        items: firebase.firestore.FieldValue.arrayUnion(db.doc(`items/${id}`)),
       });
+
+    history.push(`/produkt/${id}`);
   };
+
+  if (!categories) {
+    return null;
+  }
+
   return (
     <>
       <div className="offerPage mediaQueries">

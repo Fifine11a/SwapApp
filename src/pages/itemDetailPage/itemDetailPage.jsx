@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
-import items from '../../data/items.json';
+import db from '../../firestore.js';
 import { useParams } from 'react-router-dom';
-import image from '../../itemImg/jarda.jpg';
 
-const ItemDetail = (props) => {
-  let { id } = useParams();
-  const productId = parseInt(id);
-  const product = items.find((item) => item.id === productId);
+const ItemDetail = () => {
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    db.collection('items')
+      .doc(id)
+      .get()
+      .then((result) => result.data())
+      .then((data) => setProduct(data));
+  }, [id]);
 
   if (!product) {
     return null;
@@ -21,15 +27,15 @@ const ItemDetail = (props) => {
         </div>
         <Breadcrumbs />
         <div className="itemOfferDetails">
-          <img className="itemImg" src={image} />
+          <img className="itemImg" src={product.imageUrl} />
           <span className="itemTitle">{product.title}</span>
           <span className="itemLocation">Lokalita: {product.city}</span>
-          <span className="itemText">{product.text}</span>
+          <span className="itemText">{product.description}</span>
           <span className="exchangeDemand">
-            Co chci výměnou: {product.exchange}
+            Co chci výměnou: {product.swapDescription}
           </span>
           <span className="userNameOffer">
-            {product.name}", kontakt:"{product.contact}
+            {product.userName}", kontakt:"{product.email}
           </span>
         </div>
       </div>
