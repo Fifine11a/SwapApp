@@ -5,12 +5,16 @@ import CategoryPage from './pages/categoryPage/categoryPage';
 import CategoryDetailPage from './pages/categoryDetailPage/categoryDetailPage';
 import Footer from './footer/footer.jsx';
 import Header from './header/header.jsx';
+import itemDetailPage from './pages/itemDetailPage/itemDetailPage.jsx';
 
 export default function App() {
   return (
     <Router>
       <Header />
       <Switch>
+        <Route path="/nabidka/detail_produktu">
+          <ItemDetailPage />
+        </Route>
         <Route path="/nabidka/detail_kategorie">
           <CategoryDetailPage />
         </Route>
