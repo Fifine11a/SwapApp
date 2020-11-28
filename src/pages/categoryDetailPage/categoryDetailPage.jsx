@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemPreview from '../../itemPreview/itemPreview';
 import categories from '../../data/category.json';
 import './styles.css';
-
-/* const category1 = {
-  title: 'Detail kategorie',
-  itemIds: [1, 2, 3, 4, 5, 6, 7, 8],
-};
-
-const category2 = {
-  title: 'Detail kategorie2',
-  itemIds: [1, 2, 3],
-}; */
+import db from '../../firestore.js';
 
 const CategoryDetail = (props) => {
   let { id } = useParams();
-  const categoryId = parseInt(id);
-  const category = categories.find((item) => item.id === categoryId);
+
+  const [category, setCategory] = useState(null);
+
+  useEffect(() => {
+    db.collection('categories')
+      .doc(id)
+      .get()
+      .then((result) => result.data())
+      .then((data) => setCategory(data));
+  }, [id]);
+
+  /* 
+  db.collection('categories')
+    .get()
+    .then((result) => result.docs.map((e) => e.data()))
+    .then(console.log);
+ */
+
+  if (!category) {
+    return null;
+  }
 
   return (
     <div className="CategoryDetail mediaQueries">
@@ -30,8 +40,8 @@ const CategoryDetail = (props) => {
         <button>Drobek</button>
       </div>
       <div className="categoryDetailElm">
-        {category.itemIds.map((id) => (
-          <ItemPreview key={id} id={id} />
+        {category.items.map((item) => (
+          <ItemPreview key={item.id} id={item.id} />
         ))}
       </div>
     </div>
