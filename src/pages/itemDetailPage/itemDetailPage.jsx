@@ -20,7 +20,7 @@ const ItemDetail = (props) => {
         </div>
         <Breadcrumbs />
         <div className="itemOfferDetails">
-          <img className="itemImg" src="../../itemImg/{products.image}" />
+          <img className="itemImg" src={`../../itemImg/${product.image}`} />
           <span className="itemTitle">{product.title}</span>
           <span className="itemLocation">Lokalita: {product.city}</span>
           <span className="itemText">{product.text}</span>
