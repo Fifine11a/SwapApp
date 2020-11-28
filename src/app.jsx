@@ -2,6 +2,7 @@ import React from 'react';
 import HomePage from './pages/homePage/homePage';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import CategoryPage from './pages/categoryPage/categoryPage';
+import CategoryDetailPage from './pages/categoryDetailPage/categoryDetailPage';
 import Footer from './footer/footer.jsx';
 import Header from './header/header.jsx';
 
@@ -10,7 +11,10 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/demand">
+        <Route path="/nabidka/detail_kategorie">
+          <CategoryDetailPage />
+        </Route>
+        <Route path="/nabidka">
           <CategoryPage />
         </Route>
         <Route path="/">
