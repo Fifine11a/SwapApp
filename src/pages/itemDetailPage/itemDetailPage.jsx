@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 import items from '../../data/items.json';
 import { useParams } from 'react-router-dom';
+import image from '../../itemImg/jarda.jpg';
 
 const ItemDetail = (props) => {
   let { id } = useParams();
@@ -20,7 +21,7 @@ const ItemDetail = (props) => {
         </div>
         <Breadcrumbs />
         <div className="itemOfferDetails">
-          <img className="itemImg" src={`../../itemImg/${product.image}`} />
+          <img className="itemImg" src={image} />
           <span className="itemTitle">{product.title}</span>
           <span className="itemLocation">Lokalita: {product.city}</span>
           <span className="itemText">{product.text}</span>
