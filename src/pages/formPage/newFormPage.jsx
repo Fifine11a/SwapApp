@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import categories from '../../data/category.json';
 import towns from '../../data/towns.json';
+import db from '../../firestore.js';
+import { useHistory } from 'react-router-dom';
+import { v4 as uuid } from 'uuid';
 import './styles.css';
 
 const NewForm = (props) => {
+  const history = useHistory();
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [cityId, setCityId] = useState('');
@@ -13,6 +17,23 @@ const NewForm = (props) => {
   const [imageUrl, setImageUrl] = useState('');
   const [categoryId, setCategoryId] = useState('');
   console.log({ categoryId });
+  const submitForm = (event) => {
+    event.preventDefault();
+    const id = uuid();
+    db.collection('items')
+      .doc(id)
+      .set({
+        userName,
+        email,
+        cityId,
+        swapDescription,
+        description,
+        title,
+      })
+      .then(() => {
+        history.push(`/produkt/${id}`);
+      });
+  };
   return (
     <>
       <div className="offerPage mediaQueries">
@@ -24,7 +45,7 @@ const NewForm = (props) => {
           <div className="formNote">
             Pro nahrání předmětu vyplňte tento formulář
           </div>
-          <form>
+          <form onSubmit={submitForm}>
             <div className="section">
               <span>1</span>Jméno a kontakt
             </div>
