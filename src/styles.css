@@ -1,0 +1,288 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  color: #212529;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #dee2e6;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.logo_velke {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: -3rem;
+}
+
+.logo_male {
+  border-radius: 8px;
+  display: block;
+  width: 25%;
+  margin-top: -3rem;
+  margin-right: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .logo_male {
+    width: 330px;
+  }
+}
+
+h1 {
+  color: #ec6333;
+  text-align: center;
+  font-family: 'Amatic SC', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15vw;
+  line-height: 17vw;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+
+h2 {
+  color: #dee2e6;
+  background-color: #212529;
+  text-align: left;
+  font-family: 'Amatic SC', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  margin: 0 auto;
+  padding: 5px 0 5px 15px;
+  line-height: 45px;
+}
+
+h3 {
+  font-family: 'Amatic SC', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 100px;
+    line-height: 110px;
+  }
+  h2 {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+}
+
+.left {
+  max-width: 200px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+/* .header {
+  margin: 100px 40px;
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    margin: 80px;
+    margin-bottom: 120px;
+  }
+} */
+/* konec header */
+
+/* swapRules */
+
+.swap_lists {
+  font-size: 18px;
+  line-height: 2em;
+  padding-right: 20px;
+}
+
+.swap_demand,
+.swap_offer {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.swap_demand li,
+.swap_offer li {
+  position: relative;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.swap_demand li::before {
+  content: ' ';
+  background-image: url('img/left_li_bullet.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 10px;
+}
+
+.swap_offer li::before {
+  content: ' ';
+  background-image: url('img/right_li_bullet.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media screen and (min-width: 992px) {
+  .mediaQueries {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+/* konec swapRules */
+
+/* buttony */
+
+button {
+  background-color: #212529;
+  color: #dee2e6;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  color: #ec6333;
+}
+
+.mainPageBtn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.categoryBtn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.categoryBtn button {
+  display: flex;
+}
+
+/*@media screen and (min-width: 1150px) {
+  .categoryBtn {
+    padding: 0 100px;
+    margin: 0 200px;
+  }
+}
+ */
+.categoryBtn button {
+  margin-bottom: 10vw;
+  justify-content: center;
+}
+
+.mainPageBtn button,
+.categoryBtn button {
+  font-size: 4vw;
+  line-height: 15vw;
+  width: 45%;
+  margin-bottom: 5vw;
+}
+
+@media screen and (min-width: 768px) {
+  .categoryBtn {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .categoryBtn button {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .mainPageBtn button,
+  .categoryBtn button {
+    font-size: 40px;
+    line-height: 120px;
+    width: 370px;
+  }
+}
+
+/* konec buttonů */
+
+/* kategorie */
+.breadcrumbsBtn {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+/* konec kategorie */
+
+/* detail položky */
+.itemOfferDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemOfferDetails img {
+  width: 100%;
+  height: auto;
+}
+
+.itemTitle {
+  font-weight: 800;
+  margin: 10px;
+}
+
+.itemText {
+  margin: 10px;
+  text-align: left;
+}
+
+.userNameOffer {
+  margin: 10px;
+  font-style: italic;
+}
+
+.userNameOffer:hover,
+.userNameOffer:focus {
+  color: #ec6333;
+}
+/* konec detailu položky */
+/* homepage*/
+.mainPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepageImg {
+  max-width: 100%;
+  bottom: 0;
+}
+/* konec homepage*/
