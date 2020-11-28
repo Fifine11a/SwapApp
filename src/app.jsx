@@ -1,4 +1,5 @@
 import React from 'react';
+import HomePage from './homePage/homePage';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import MainCategory from './pages/categoryPage.jsx';
 import Footer from './footer/footer.jsx';
@@ -11,7 +12,7 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Home page</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
@@ -32,7 +33,7 @@ export default function App() {
             <Users />
           </Route>
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
       </div>
@@ -44,10 +45,6 @@ export default function App() {
       </>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
 }
 
 function About() {
