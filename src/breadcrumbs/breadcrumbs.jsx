@@ -2,7 +2,7 @@ import React from 'react';
 
 const Breadcrumbs = (props) => {
   return (
-    <div class="breadcrumbsBtn">
+    <div className="breadcrumbsBtn">
       <button>Drobek</button>
       <button>Drobek</button>
       <button>Drobek</button>

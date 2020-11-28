@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <>
       <Hamburger />
-      <div class="logo">
-        <img class="logo_male" src="img/logo.png" alt="swapApp logo" />
+      <div className="logo">
+        <img className="logo_male" src="img/logo.png" alt="swapApp logo" />
       </div>
     </>
   );

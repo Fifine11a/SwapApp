@@ -14,18 +14,20 @@ const ItemDetail = (props) => {
 
   return (
     <>
-      <div class="itemPage mediaQueries">
+      <div className="itemPage mediaQueries">
         <div className="header">
           <h1>Detail produktu</h1>
         </div>
         <Breadcrumbs />
-        <div class="itemOfferDetails">
-          <img class="itemImg" src="../../itemImg/kniha5.jpg" />
-          <span class="itemTitle">{product.title}</span>
-          <span class="itemLocation">{product.city}</span>
-          <span class="itemText">{product.text}</span>
-          <span className="exchangeDemand">{product.exchange}</span>
-          <span class="userNameOffer">
+        <div className="itemOfferDetails">
+          <img className="itemImg" src={`../../itemImg/${product.image}`} />
+          <span className="itemTitle">{product.title}</span>
+          <span className="itemLocation">Lokalita: {product.city}</span>
+          <span className="itemText">{product.text}</span>
+          <span className="exchangeDemand">
+            Co chci výměnou: {product.exchange}
+          </span>
+          <span className="userNameOffer">
             {product.name}", kontakt:"{product.contact}
           </span>
         </div>
