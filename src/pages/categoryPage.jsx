@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './categoryPage.css';
 
 const MainCategory = (props) => {
   return (
