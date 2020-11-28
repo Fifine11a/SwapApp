@@ -1,99 +1,128 @@
 import React, { useState } from 'react';
 import categories from '../../data/category.json';
+import towns from '../../data/towns.json';
+import './styles.css';
 
 const NewForm = (props) => {
-  const [name, setName] = useState('');
-
+  const [userName, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [cityId, setCityId] = useState('');
+  const [swapDescription, setSwapDescription] = useState('');
+  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState('');
+  const [imageUrl, setImageUrl] = useState('');
+  const [categoryId, setCategoryId] = useState('');
+  console.log({ categoryId });
   return (
     <>
-      <div class="offerPage mediaQueries">
+      <div className="offerPage mediaQueries">
         {' '}
-        {JSON.stringify({ name })}
-        <div class="header">
+        <div className="header">
           <h1>Nabízím</h1>
         </div>
-        <div class="formStyle">
-          <div class="formNote">
+        <div className="formStyle">
+          <div className="formNote">
             Pro nahrání předmětu vyplňte tento formulář
           </div>
           <form>
-            <div class="section">
+            <div className="section">
               <span>1</span>Jméno a kontakt
             </div>
-            <div class="inner-wrap">
+            <div className="inner-wrap">
               <label>
                 jméno a příjmení{' '}
                 <input
+                  value={userName}
                   type="text"
                   name="field1"
-                  onChange={(event) => setName(event.target.value)}
+                  onChange={(event) => setUserName(event.target.value)}
                 />
               </label>
               <label>
-                e-mail <input type="email" name="field2" />
+                e-mail{' '}
+                <input
+                  value={email}
+                  type="email"
+                  name="field2"
+                  onChange={(event) => setEmail(event.target.value)}
+                />
               </label>
             </div>
 
-            <div class="section">
+            <div className="section">
               <span>2</span>Nový předmět
             </div>
-            <div class="inner-wrap innerWrapCategory">
+            <div className="inner-wrap innerWrapCategory">
               <label>
-                Název předmětu <input type="text" name="field3" />
+                Název předmětu{' '}
+                <input
+                  value={title}
+                  type="text"
+                  name="field3"
+                  onChange={(event) => setTitle(event.target.value)}
+                />
               </label>
               <label>
                 <div>Kategorie předmětu</div>
                 <div>
                   {categories.map((category) => (
-                    <>
+                    <React.Fragment key={category.id}>
                       <input
                         type="radio"
                         id={category.id}
                         name="field4"
                         value={category.id}
+                        onChange={(event) => setCategoryId(event.target.value)}
                       />
                       <label htmlFor={category.id}>{category.name}</label>
-                    </>
+                    </React.Fragment>
                   ))}
                 </div>
               </label>
               <label>
-                Popis předmětu <textarea name="field2"></textarea>
+                Popis předmětu{' '}
+                <textarea
+                  value={description}
+                  name="field2"
+                  onChange={(event) => setDescription(event.target.value)}
+                ></textarea>
               </label>
               <label>
-                Za co chci vyměnit <textarea name="field2"></textarea>
+                Za co chci vyměnit{' '}
+                <textarea
+                  value={swapDescription}
+                  name="field2"
+                  onChange={(event) => setSwapDescription(event.target.value)}
+                ></textarea>
               </label>
-              <select name="city">
-                <option value="brno">Brno</option>
-                <option value="ceskeBudejovice">České Budějovice</option>
-                <option value="hradecKralove">Hradec Králové</option>
-                <option value="liberec">Liberec</option>
-                <option value="olomouc">Olomouc</option>
-                <option value="ostrava">Ostrava</option>
-                <option value="pardubice">Pardubice</option>
-                <option value="plzen">Plzeň</option>
-                <option value="praha" selected>
-                  Praha
-                </option>
-                <option value="zlin">Zlín</option>
-              </select>
+              <div>
+                <select
+                  value={cityId}
+                  onChange={(event) => setCityId(event.target.value)}
+                >
+                  {towns.map((town) => (
+                    <option key={town.id} value={town.id}>
+                      {town.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
 
-            <div class="section">
+            <div className="section">
               <span>3</span>Nahrání fotografie
             </div>
-            <div class="inner-wrap">
+            <div className="inner-wrap">
               <input
-                class="photoElm"
+                className="photoElm"
                 name="file-upload-field"
                 type="file"
-                class="file-upload-field"
-                value=""
+                className="file-upload-field"
               />
             </div>
-            <div class="button-section">
+            <div className="button-section">
               <input type="submit" name="Sign Up" />
-              <span class="privacy-policy">
+              <span className="privacy-policy">
                 <input type="checkbox" name="field7" />
                 Souhlas s podmínkami a pravidly webu
               </span>
