@@ -1,5 +1,6 @@
 import React from 'react';
 import './categoryPage.css';
+import categories from '../../data/category.json';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Search from '../../search/search.jsx';
 
@@ -11,21 +12,14 @@ const MainCategory = (props) => {
       </div>
       <Search />
       <div className="categoryBtn">
-        <Link className="category searchCategoryClothes" to="/kategorie/1">
-          Oblečení
-        </Link>
-        <Link className="category searchCategoryKids" to="/kategorie/2">
-          Vše pro děti
-        </Link>
-
-        {/* <button className="category searchCategoryClothes">Oblečení</button>
-        <button className="category searchCategoryKids">Vše pro děti</button>
-        <button className="category searchCategoryHouse">
-          Vše pro domácnost
-        </button>
-        <button className="category searchCategoryPlants">Květiny</button>
-        <button className="category searchCategoryBooks">Knihy</button>
-        <button className="category searchCategoryOthers">Ostatní</button> */}
+        {categories.map((category) => (
+          <Link
+            className="category searchCategoryClothes"
+            to={`/kategorie/${category.id}`}
+          >
+            {category.name}
+          </Link>
+        ))}
       </div>
     </div>
   );
