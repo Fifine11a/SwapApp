@@ -13,6 +13,9 @@ const HomePage = (props) => {
           Nabízím
         </Link>
       </div>
+      <Link className="itemDetailPage" to="/itemDetailPage">
+        Detail produktu
+      </Link>
       <img className="homepageImg" src="img/homepage.jpg" alt="útulný domov" />
     </div>
   );
