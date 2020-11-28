@@ -1,6 +1,6 @@
 import React from 'react';
 import './categoryPage.css';
-import Search from '../search/search';
+import Search from '../../search/search.jsx';
 
 const MainCategory = (props) => {
   return (
