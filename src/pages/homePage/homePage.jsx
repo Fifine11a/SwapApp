@@ -6,7 +6,7 @@ const HomePage = (props) => {
   return (
     <div className="mainPage mediaQueries">
       <div className="mainPageBtn">
-        <Link className="demandMainBtn" to="/nabidka">
+        <Link className="demandMainBtn" to="/kategorie">
           Hledám
         </Link>
         <Link className="offerMainBtn" to="/offer">

@@ -1,5 +1,6 @@
 import React from 'react';
 import './categoryPage.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Search from '../../search/search.jsx';
 
 const MainCategory = (props) => {
@@ -10,10 +11,10 @@ const MainCategory = (props) => {
       </div>
       <Search />
       <div className="categoryBtn">
-        <Link className="category searchCategoryClothes" to="/category1">
+        <Link className="category searchCategoryClothes" to="/kategorie/1">
           Oblečení
         </Link>
-        <Link className="category searchCategoryKids" to="/category2">
+        <Link className="category searchCategoryKids" to="/kategorie/2">
           Vše pro děti
         </Link>
 
