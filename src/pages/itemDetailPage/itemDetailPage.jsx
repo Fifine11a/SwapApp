@@ -7,9 +7,12 @@ const ItemDetail = (props) => {
   return (
     <>
       <div class="itemPage mediaQueries">
+        <div className="header">
+          <h1>Produkt</h1>
+        </div>
         <Breadcrumbs />
         <div class="itemOfferDetails">
-          <img class="itemImg" src="../pages/./item img/kniha4.jpg" />
+          <img class="itemImg" src="../../itemImg/kniha5.jpg" />
           <span class="itemTitle">Titulek položky</span>
           <span class="itemText">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
