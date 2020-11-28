@@ -6,12 +6,16 @@ import CategoryDetailPage from './pages/categoryDetailPage/categoryDetailPage';
 import Footer from './footer/footer.jsx';
 import Header from './header/header.jsx';
 import ItemDetail from './pages/itemDetailPage/itemDetailPage.jsx';
+import NewForm from './pages/formPage/newFormPage';
 
 export default function App() {
   return (
     <Router>
       <Header />
       <Switch>
+        <Route path="/form/new">
+          <NewForm />
+        </Route>
         <Route path="/produkt/:id">
           <ItemDetail />
         </Route>
