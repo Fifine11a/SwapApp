@@ -15,10 +15,10 @@ export default function App() {
         <Route path="/produkt/:id">
           <ItemDetail />
         </Route>
-        <Route path="/nabidka/:id">
+        <Route path="/kategorie/:id">
           <CategoryDetailPage />
         </Route>
-        <Route path="/nabidka">
+        <Route path="/kategorie">
           <CategoryPage />
         </Route>
         <Route path="/">
