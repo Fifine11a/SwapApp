@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import homepageImg from '../../img/homepage.jpg';
 
 const HomePage = (props) => {
   return (
@@ -20,11 +21,7 @@ const HomePage = (props) => {
         Detail produktu
       </Link>
 
-      <img
-        className="homepageImg"
-        src="../img/homepage.jpg"
-        alt="útulný domov"
-      />
+      <img className="homepageImg" src={homepageImg} alt="útulný domov" />
     </div>
   );
 };
