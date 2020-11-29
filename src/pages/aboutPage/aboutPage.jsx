@@ -9,8 +9,12 @@ const AboutUs = () => {
         Digitální akademie:Web 2020.
       </p>
       <p>
-        Děkujeme Czechitas za organizaci, Martinovi, Filipům, Sergejovi, Petrovi
-        a ostatním za lektorování a koučování.
+        Děkujeme{' '}
+        <a href="https://www.czechitas.cz/cs/">
+          <img src="../../img/Czechitas.png" alt="logo Czechitas" />
+        </a>{' '}
+        za organizaci, Martinovi, Filipům, Sergejovi, Petrovi a spol za
+        lektorování a koučování.
       </p>
       <p>
         Děkujeme Leně a Zuzce a všem ostatním holkám za skvělou atmosféru a
@@ -20,6 +24,16 @@ const AboutUs = () => {
         Náš nekonečný vděk patří taky Lukášovi, Tomášovi a Rosťovi z Pipedrive
         za mentorování a láskyplnou péči. A fotbálkové bitvy. A víno.
       </p>
+      <span>
+        Homepage photo by{' '}
+        <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+          Jonathan Borba
+        </a>{' '}
+        on{' '}
+        <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+          Unsplash
+        </a>
+      </span>
     </>
   );
 };

@@ -78,7 +78,7 @@ const NewForm = (props) => {
             </div>
             <div className="inner-wrap">
               <label>
-                jméno a příjmení{' '}
+                jméno{' '}
                 <input
                   value={userName}
                   type="text"
@@ -132,6 +132,7 @@ const NewForm = (props) => {
                 <textarea
                   value={description}
                   name="field2"
+                  placeholder="Vyšší šanci na výměnu mají předměty, u kterých je uvedený stav a stáří. Poptávka není jen po nepoužitých předmětech, zářících novotou. Věříme, že každé zboží má svého... měniče :)"
                   onChange={(event) => setDescription(event.target.value)}
                 ></textarea>
               </label>
@@ -140,10 +141,12 @@ const NewForm = (props) => {
                 <textarea
                   value={swapDescription}
                   name="field2"
+                  placeholder="Napiš, co by se ti hodilo výměnou. Ideálně dej prosím na výběr z více věcí. Může se také stát, že tě uživatelé překvapí a výměnou ti nabídnou něco úplně nečekaného :)"
                   onChange={(event) => setSwapDescription(event.target.value)}
                 ></textarea>
               </label>
               <div>
+                Lokalita, kde se uskuteční výměna
                 <select
                   value={cityId}
                   onChange={(event) => setCityId(event.target.value)}
