@@ -1,0 +1,32 @@
+.categoryDetailElm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.detailItem {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.categoryDetailElm .itemImg {
+  width: 100%;
+  border: 1px solid #212529;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.categoryDetailElm .itemImg img {
+  width: 100%;
+}
+.categoryDetailElm .itemTitle {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.categoryDetailElm .userNameOffer {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}

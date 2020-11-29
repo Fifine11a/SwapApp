@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import db from '../firestore.js';
 import towns from '../data/towns.json';
+import './itemPreview.css';
 
 const ItemPreview = (props) => {
   const itemPreviewId = props.id;
@@ -24,12 +25,16 @@ const ItemPreview = (props) => {
 
   return (
     <div className="detailItem">
-      <Link to={`/produkt/${itemPreviewId}`}>
+      <Link className="itemImg" to={`/produkt/${itemPreviewId}`}>
         <img src={itemPreview.imageUrl} />
       </Link>
-      <Link to={`/produkt/${itemPreviewId}`}>{itemPreview.title}</Link>
+      <Link className="itemTitle" to={`/produkt/${itemPreviewId}`}>
+        {itemPreview.title}
+      </Link>
       <Link to={`/produkt/${itemPreviewId}`}>{city.name}</Link>
-      <Link to={`/produkt/${itemPreviewId}`}>{itemPreview.userName}</Link>
+      <Link className="userNameOffer" to={`/produkt/${itemPreviewId}`}>
+        {itemPreview.userName}
+      </Link>
     </div>
   );
 };
