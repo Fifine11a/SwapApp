@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
   return (
-    <>
+    <div className="footer">
       <ul className="footer_list">
         <li className="footer_item">
           <Link to="/">Homepage</Link>
@@ -22,7 +22,7 @@ const Footer = (props) => {
           <Link to="">Kontakt?</Link>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 
