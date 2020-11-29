@@ -31,7 +31,7 @@ const ItemPreview = (props) => {
       <Link className="itemTitle" to={`/produkt/${itemPreviewId}`}>
         {itemPreview.title}
       </Link>
-      <Link to={`/produkt/${itemPreviewId}`}>{city.name}</Link>
+      <Link to={`/produkt/${itemPreviewId}`}>{city?.name}</Link>
       <Link className="userName" to={`/produkt/${itemPreviewId}`}>
         {itemPreview.userName}
       </Link>
