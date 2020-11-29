@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import firebase from 'firebase';
 import { v4 as uuid } from 'uuid';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const NewForm = (props) => {
   const [categories, setCategories] = useState(null);
@@ -171,7 +172,7 @@ const NewForm = (props) => {
               <input type="submit" name="Sign Up" />
               <span className="privacy-policy">
                 <input type="checkbox" name="field7" />
-                Souhlas s podmínkami a pravidly webu
+                <Link to="/faq">Souhlas s podmínkami a pravidly webu</Link>
               </span>
             </div>
           </form>
