@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button/button';
 
 const Header = () => {
   return (
@@ -6,6 +7,7 @@ const Header = () => {
       <div className="logo">
         <img className="logo_male" src="img/logo.png" alt="swapApp logo" />
       </div>
+      <Button title="Nabízím" location="'/formular/novy'" />
     </>
   );
 };

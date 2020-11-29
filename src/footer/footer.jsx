@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = (props) => {
   return (
     <>
-      <ul class="footer_list">
+      <ul className="footer_list">
         <li className="footer_item">
           <Link to="/">Homepage</Link>
         </li>
