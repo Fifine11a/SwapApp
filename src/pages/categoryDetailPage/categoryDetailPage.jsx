@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import ItemPreview from '../../itemPreview/itemPreview';
 import db from '../../firestore.js';
 
-import './styles.css';
+import './categoryDetailPage.css';
 import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 
 const CategoryDetail = (props) => {
