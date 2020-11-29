@@ -19,7 +19,7 @@ const Footer = (props) => {
           <Link to="/faq">Pravidla</Link>
         </li>
         <li className="footer_item">
-          <Link to="">Kontakt?</Link>
+          <Link to="/about">O nás</Link>
         </li>
       </ul>
     </div>

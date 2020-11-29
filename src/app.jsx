@@ -8,12 +8,16 @@ import Header from './header/header.jsx';
 import ItemDetail from './pages/itemDetailPage/itemDetailPage.jsx';
 import NewForm from './pages/formPage/newFormPage';
 import FaqPage from './pages/faqPage/faqPage';
+import AboutUs from './pages/aboutPage/aboutPage';
 
 export default function App() {
   return (
     <Router>
       <Header />
       <Switch>
+        <Route path="/about">
+          <AboutUs />
+        </Route>
         <Route path="/faq">
           <FaqPage />
         </Route>
