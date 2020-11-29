@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './categoryPage.css';
 import Button from '../../button/button';
 import db from '../../firestore.js';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+/* import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; */
 import Search from '../../search/search.jsx';
+import { Link } from 'react-router-dom';
 
 const MainCategory = (props) => {
   const [categories, setCategories] = useState([]);
@@ -35,7 +36,7 @@ const MainCategory = (props) => {
             className="category searchCategoryClothes"
             to={`/kategorie/${category.id}`}
           >
-            {category.name}
+            <Button>{category.name}</Button>
           </Link>
         ))}
       </div>
