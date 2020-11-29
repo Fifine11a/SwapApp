@@ -11,7 +11,7 @@ const Header = () => {
         <img className="logo_male" src={logo} alt="swapApp logo" />
       </div>
       <Search />
-      <Button title="Nabízím" location="'/formular/novy'" />
+      <Button title="Nabízím" location="/formular/novy" />
     </div>
   );
 };

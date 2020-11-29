@@ -1,11 +1,12 @@
 import React from 'react';
 import './button.css';
+import { Link } from 'react-router-dom';
 
 const Button = (props) => {
   return (
-    <button onclick={`"window.location.href=${props.location}"`}>
-      {props.title}
-    </button>
+    <Link to={props.location}>
+      <button>{props.title}</button>
+    </Link>
   );
 };
 
