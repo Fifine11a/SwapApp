@@ -36,7 +36,7 @@ const MainCategory = (props) => {
             className="category searchCategoryClothes"
             to={`/kategorie/${category.id}`}
           >
-            <Button>{category.name}</Button>
+            <button>{category.name}</button>
           </Link>
         ))}
       </div>
