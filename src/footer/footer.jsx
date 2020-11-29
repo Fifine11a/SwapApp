@@ -6,19 +6,20 @@ const Footer = (props) => {
   return (
     <div className="footer">
       <ul className="footer_list">
-        <Link to="/">Homepage</Link>
-        <Link to="/faq">FAQ a pravidla</Link>
         <li className="footer_item">
-          <a href="swapRules.html">Pravidla</a>
+          <a href="/">Homepage</a>
         </li>
         <li className="footer_item">
-          <a href="">položka patičky</a>
+          <a href="/formular/novy">Nahrát předmět</a>
         </li>
         <li className="footer_item">
-          <a href="">položka patičky</a>
+          <a href="/faq">Jak na to?</a>
         </li>
         <li className="footer_item">
-          <a href="">položka patičky</a>
+          <a href="/faq">Pravidla</a>
+        </li>
+        <li className="footer_item">
+          <a href="">Kontakt?</a>
         </li>
       </ul>
     </div>

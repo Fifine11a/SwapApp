@@ -2,13 +2,13 @@ import React from 'react';
 
 const FaqPage = () => {
   return (
-    <div class="rulesPage mediaQueries">
-      <div class="header">
+    <div className="rulesPage mediaQueries">
+      <div className="header">
         <h1>Jak na to?</h1>
       </div>
-      <div class="margin_bottom">
+      <div className="margin_bottom">
         <h2>Hledám</h2>
-        <ul class="swap_demand">
+        <ul className="swap_demand">
           <li>
             Najdi, co potřebuješ, přes vyhledávací pole nebo proklikej kategorie
           </li>
@@ -21,9 +21,9 @@ const FaqPage = () => {
         </ul>
       </div>
 
-      <div class="margin_bottom">
+      <div className="margin_bottom">
         <h2>Nabízím</h2>
-        <ul class="swap_offer">
+        <ul className="swap_offer">
           <li>Nahraj fotku předmětu, který už ti neslouží</li>
           <li>
             Do popisku nezapomeň uvést, co by se ti naopak hodilo. Je-li to
@@ -36,9 +36,9 @@ const FaqPage = () => {
         </ul>
       </div>
 
-      <div class="margin_bottom">
+      <div className="margin_bottom">
         <h2>Swapovací pravidla</h2>
-        <ul class="swap_demand">
+        <ul className="swap_demand">
           <li>Vyměňujeme, neprodáváme!</li>
           <li>
             Nabízíme jenom předměty, které jsou v pořádku - kompletní, funkční,
@@ -61,9 +61,9 @@ const FaqPage = () => {
           <li>Reklamy a spam swapovat nechceme!</li>
         </ul>
       </div>
-      <div class="margin_bottom">
+      <div className="margin_bottom">
         <h2>Podmínky používání</h2>
-        <ul class="swap_offer">
+        <ul className="swap_offer">
           <li>
             SwapApp je aplikace zaměřená na zobrazování inzerátů za účelem
             výměny zboží. Vložením inzerátu a/nebo odpovězením na inzerát
