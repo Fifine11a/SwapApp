@@ -1,27 +1,28 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
   return (
-    <div className="footer">
-      <ul className="footer_list">
+    <>
+      <ul class="footer_list">
         <li className="footer_item">
-          <a href="index.html">Homepage</a>
+          <Link to="/">Homepage</Link>
         </li>
         <li className="footer_item">
-          <a href="swapRules.html">Pravidla</a>
+          <Link to="/formular/novy">Nahrát předmět</Link>
         </li>
         <li className="footer_item">
-          <a href="">položka patičky</a>
+          <Link to="/faq">Jak na to?</Link>
         </li>
         <li className="footer_item">
-          <a href="">položka patičky</a>
+          <Link to="/faq">Pravidla</Link>
         </li>
         <li className="footer_item">
-          <a href="">položka patičky</a>
+          <Link to="">Kontakt?</Link>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 

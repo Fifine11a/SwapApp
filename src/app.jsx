@@ -7,12 +7,16 @@ import Footer from './footer/footer.jsx';
 import Header from './header/header.jsx';
 import ItemDetail from './pages/itemDetailPage/itemDetailPage.jsx';
 import NewForm from './pages/formPage/newFormPage';
+import FaqPage from './pages/faqPage/faqPage';
 
 export default function App() {
   return (
     <Router>
       <Header />
       <Switch>
+        <Route path="/faq">
+          <FaqPage />
+        </Route>
         <Route path="/formular/novy">
           <NewForm />
         </Route>
