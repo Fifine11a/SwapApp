@@ -22,9 +22,6 @@ const ItemPreview = (props) => {
 
   const city = towns.find((city) => city.id === parseInt(itemPreview.cityId));
 
-  console.log(cityName);
-  console.log(towns);
-
   return (
     <div className="detailItem">
       <Link to={`/produkt/${itemPreviewId}`}>
