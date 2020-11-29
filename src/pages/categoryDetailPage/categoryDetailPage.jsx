@@ -4,6 +4,7 @@ import ItemPreview from '../../itemPreview/itemPreview';
 import db from '../../firestore.js';
 
 import './styles.css';
+import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 
 const CategoryDetail = (props) => {
   let { id } = useParams();
@@ -34,11 +35,7 @@ const CategoryDetail = (props) => {
       <div className="header">
         <h1>{category.name}</h1>
       </div>
-      <div className="breadcrumbsBtn">
-        <button>Drobek</button>
-        <button>Drobek</button>
-        <button>Drobek</button>
-      </div>
+      <Breadcrumbs />
       <div className="categoryDetailElm">
         {category.items.map((item) => (
           <ItemPreview key={item.id} id={item.id} />

@@ -1,0 +1,13 @@
+button {
+  background-color: #212529;
+  color: #dee2e6;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  color: #ec6333;
+}
