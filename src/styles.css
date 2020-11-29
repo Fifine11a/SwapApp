@@ -31,19 +31,6 @@ body {
   margin-top: -3rem;
 }
 
-.logo_male {
-  border-radius: 8px;
-  display: block;
-  width: 25%;
-  margin-top: -3rem;
-  margin-right: 2rem;
-}
-@media screen and (min-width: 992px) {
-  .logo_male {
-    width: 330px;
-  }
-}
-
 h1 {
   color: #ec6333;
   text-align: center;
