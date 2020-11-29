@@ -13,6 +13,9 @@ const HomePage = (props) => {
           Nabízím
         </Link>
       </div>
+      <Link className="rulesPage" to="/faq">
+        FAQ a pravidla
+      </Link>
       <Link className="itemDetailPage" to="/produkt/1">
         Detail produktu
       </Link>
