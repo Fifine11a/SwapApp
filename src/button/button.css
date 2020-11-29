@@ -11,3 +11,50 @@ button:hover,
 button:focus {
   color: #ec6333;
 }
+
+.largeBtn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.categoryBtn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.categoryBtn button {
+  display: flex;
+}
+.categoryBtn button {
+  margin-bottom: 10vw;
+  justify-content: center;
+}
+
+.largeBtn button,
+.categoryBtn button {
+  font-size: 4vw;
+  line-height: 15vw;
+  width: 45%;
+  margin-bottom: 5vw;
+}
+
+@media screen and (min-width: 768px) {
+  .categoryBtn {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .categoryBtn button {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .largeBtn button,
+  .categoryBtn button {
+    font-size: 40px;
+    line-height: 120px;
+    width: 370px;
+  }
+}

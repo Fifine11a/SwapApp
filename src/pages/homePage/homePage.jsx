@@ -2,26 +2,15 @@ import React from 'react';
 import './styles.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import homepageImg from '../../img/homepage.jpg';
+import Button from '../../button/button';
 
 const HomePage = (props) => {
   return (
     <div className="mainPage mediaQueries">
-      <div className="mainPageBtn">
-        <Link className="demandMainBtn" to="/kategorie">
-          Hledám
-        </Link>
-        <Link className="offerMainBtn" to="/formular/novy">
-          Nabízím
-        </Link>
-      </div>
-      <Link className="rulesPage" to="/faq">
-        FAQ a pravidla
-      </Link>
-      <Link className="itemDetailPage" to="/produkt/1">
-        Detail produktu
-      </Link>
-
       <img className="homepageImg" src={homepageImg} alt="útulný domov" />
+      <div className="largeBtn">
+        <Button title="Hledám" location="/kategorie" />
+      </div>
     </div>
   );
 };
