@@ -19,13 +19,14 @@
 }
 .categoryDetailElm .itemImg img {
   width: 100%;
+  border-radius: 4px;
 }
 .categoryDetailElm .itemTitle {
   font-size: 1.5rem;
   margin: 0;
   margin-bottom: 1rem;
 }
-.categoryDetailElm .userNameOffer {
+.categoryDetailElm .userName {
   font-size: 1rem;
   line-height: 1rem;
   margin: 0;
