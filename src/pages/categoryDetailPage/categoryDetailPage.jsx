@@ -37,7 +37,7 @@ const CategoryDetail = (props) => {
       </div>
       <Breadcrumbs />
       <div className="categoryDetailElm">
-        {category.items.map((item) => (
+        {(category.items ?? []).map((item) => (
           <ItemPreview key={item.id} id={item.id} />
         ))}
       </div>
