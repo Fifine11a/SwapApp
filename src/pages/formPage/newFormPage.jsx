@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import towns from '../../data/towns.json';
-import db from '../../firestore.js';
+import db, { storage } from '../../firestore.js';
 import { useHistory } from 'react-router-dom';
 import firebase from 'firebase';
 import { v4 as uuid } from 'uuid';
@@ -32,12 +32,14 @@ const NewForm = (props) => {
   const [swapDescription, setSwapDescription] = useState('');
   const [description, setDescription] = useState('');
   const [title, setTitle] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
+  const [imageAsFile, setImageAsFile] = useState('');
   const [categoryId, setCategoryId] = useState('');
 
   const submitForm = async (event) => {
     event.preventDefault();
     const id = uuid();
+    const uploadedImageUrl = await handleFireBaseUpload();
+
     await db.collection('items').doc(id).set({
       userName,
       email,
@@ -45,6 +47,7 @@ const NewForm = (props) => {
       swapDescription,
       description,
       title,
+      imageUrl: uploadedImageUrl,
     });
 
     await db
@@ -55,6 +58,47 @@ const NewForm = (props) => {
       });
 
     history.push(`/produkt/${id}`);
+  };
+
+  const handleFireBaseUpload = () =>
+    new Promise((resolve, reject) => {
+      console.log('start of upload');
+      // async magic goes here...
+      if (imageAsFile === '') {
+        return console.error(
+          `not an image, the image file is a ${typeof imageAsFile}`,
+        );
+      }
+      const uploadTask = storage
+        .ref(`/images/${imageAsFile.name}`)
+        .put(imageAsFile);
+      //initiates the firebase side uploading
+      uploadTask.on(
+        'state_changed',
+        (snapShot) => {
+          //takes a snap shot of the process as it is happening
+          console.log(snapShot);
+        },
+        (err) => {
+          //catches the errors
+          reject(err);
+        },
+        () => {
+          // gets the functions from storage refences the image storage in firebase by the children
+          storage
+            .ref('images')
+            .child(imageAsFile.name)
+            .getDownloadURL()
+            .then((fireBaseUrl) => {
+              resolve(fireBaseUrl);
+            });
+        },
+      );
+    });
+
+  const handleSelectImage = (e) => {
+    const image = e.target.files[0];
+    setImageAsFile((imageFile) => image);
   };
 
   if (!categories) {
@@ -169,6 +213,7 @@ const NewForm = (props) => {
                 name="file-upload-field"
                 type="file"
                 className="file-upload-field"
+                onChange={handleSelectImage}
               />
             </div>
             <div className="button-section">
