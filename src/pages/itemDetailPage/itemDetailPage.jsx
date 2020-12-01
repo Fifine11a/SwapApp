@@ -39,7 +39,10 @@ const ItemDetail = () => {
             Co chci výměnou: {product.swapDescription}
           </span>
           <span className="userNameOffer">
-            {product.userName}", kontakt:"{product.email}
+            Výměnu nabízí: {product.userName}
+            <a href={`mailto:${product.email}`}>
+              <button>Chci swapnout</button>
+            </a>
           </span>
         </div>
       </div>
