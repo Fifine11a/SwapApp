@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import db from '../firestore.js';
 import towns from '../data/towns.json';
 import './itemPreview.css';
+import '../styles.css';
 
 const ItemPreview = (props) => {
   const itemPreviewId = props.id;

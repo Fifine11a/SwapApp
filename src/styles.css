@@ -129,12 +129,12 @@ h3 {
   left: 0;
   top: 0;
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 1300px) {
   .mediaQueries {
-    width: 992px;
+    width: 1200px;
     margin: 0 auto;
   }
-}
+} */
 /* konec swapRules */
 
 /* kategorie */
