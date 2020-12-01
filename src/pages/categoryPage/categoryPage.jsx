@@ -28,7 +28,6 @@ const MainCategory = (props) => {
       <div className="header">
         <h1>Hledám</h1>
       </div>
-      <Search />
       <div className="largeBtn">
         {categories.map((category) => (
           <Link

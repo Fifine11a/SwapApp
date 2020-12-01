@@ -3,6 +3,7 @@ import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 import db from '../../firestore.js';
 import { useParams } from 'react-router-dom';
 import towns from '../../data/towns.json';
+import CategoryDetail from '../categoryDetailPage/categoryDetailPage';
 
 const ItemDetail = () => {
   const { id } = useParams();
