@@ -27,12 +27,11 @@ const ItemDetail = () => {
     <>
       <div className="itemPage mediaQueries">
         <div className="header">
-          <h1>Detail produktu</h1>
+          <h1>{product.title}</h1>
         </div>
         <Breadcrumbs />
         <div className="itemOfferDetails">
           <img className="itemImg" src={product.imageUrl} />
-          <span className="itemTitle">{product.title}</span>
           <span className="itemLocation">Lokalita: {city?.name}</span>
           <span className="itemText">{product.description}</span>
           <span className="exchangeDemand">
