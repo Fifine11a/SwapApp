@@ -14,7 +14,7 @@ const Header = () => {
         </Link>
       </div>
       <Search />
-      <div className="largeBtn">
+      <div className="largeBtn headerBtn">
         <Button title="Nabízím" location="/formular/novy" />
       </div>
     </div>

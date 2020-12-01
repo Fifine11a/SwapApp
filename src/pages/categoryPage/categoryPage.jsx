@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './categoryPage.css';
-import Button from '../../button/button';
+// import Button from '../../button/button';
 import db from '../../firestore.js';
 /* import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; */
 import Search from '../../search/search.jsx';

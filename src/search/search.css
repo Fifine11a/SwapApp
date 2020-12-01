@@ -1,84 +1,68 @@
+.searchForm {
+  float: right;
+  width: 100%;
+}
 fieldset {
-  position: relative;
-  display: inline-block;
-  padding: 0 0 0 40px;
-  background: #fff;
-  border: solid 2px #212529;
+  border: 1px solid #212529;
+  padding: 0;
+  margin: 0;
   border-radius: 4px;
 }
-.searchAndInfos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.searchForm input[type='text'] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
 }
-.infoBtn {
-  height: 50px;
-  width: 50px;
-  box-sizing: border-box;
-  background-color: #dee2e6;
-}
-.infoBtn:hover {
-  background-color: #ec6333;
-}
-.questionMark {
-  height: 2.5rem;
-}
-.searchForm {
-  display: flex;
-  justify-content: center;
-  margin: 3rem;
-}
-.searchInput,
-.searchBtn {
-  position: relative;
-  width: 300px;
-  height: 35px;
-  padding: 0;
-  float: left;
-}
-
 .searchInput {
-  color: #212529;
-  z-index: 2;
-  border: 0 none;
+  width: 80%;
   font-size: 25px;
-}
-.searchInput:focus {
-  outline: 0 none;
-}
-.searchInput:focus + .searchBtn {
-  transform: translate(0, 0);
-  transition-duration: 0.3s;
-}
-.searchInput:focus + .searchBtn .fa {
-  transform: translate(0px, 0);
-  transition-duration: 0.3s;
-  color: #fff;
+  border: none;
 }
 
 .searchBtn {
-  z-index: 1;
-  width: 50px;
-  border: 0 none;
+  float: right;
   background: #ec6333;
+  border: none;
   cursor: pointer;
-  border-radius: 0 3px 3px 0;
-  transform: translate(-155px, 0);
-  transition-duration: 0.3s;
-  box-sizing: border-box;
-}
-
-.fa-search {
-  font-size: 1.4rem;
-  color: #212529;
-  z-index: 3;
-  top: 25%;
-  transform: translate(-190px, 0);
-  transition-duration: 0.3s;
-  transition: all 0.1s ease-in-out;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 4px 4px 0;
 }
 .searchInput + .searchBtn .fa {
   content: url(../img/search.png);
   height: 30px;
+}
+@media screen and (min-width: 992px) {
+  .searchForm {
+    width: 50%;
+  }
+  .searchForm input[type='text'] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  .searchInput {
+    width: 80%;
+    font-size: 25px;
+    line-height: 30px;
+    border: none;
+  }
+
+  .searchBtn {
+    float: right;
+    background: #ec6333;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .searchInput + .searchBtn .fa {
+    content: url(../img/search.png);
+    height: 30px;
+  }
 }
