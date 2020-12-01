@@ -24,11 +24,9 @@ const MainCategory = (props) => {
       .then((data) => setCategories(data));
   }, []);
   return (
-    <div className="demandPage mediaQueries">
-      <div className="header">
-        <h1>Hledám</h1>
-      </div>
-      <div className="largeBtn">
+    <div className="demandPage">
+      <h1>Hledám</h1>
+      <div className="largeBtn categoryBtn">
         {categories.map((category) => (
           <Link
             key={category.id}
