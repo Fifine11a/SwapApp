@@ -17,6 +17,7 @@ body {
   background-color: #dee2e6;
   letter-spacing: 0.1em;
   line-height: 1.5em;
+  font-size: 15px;
 }
 .logo {
   display: flex;
@@ -60,14 +61,8 @@ h3 {
   font-size: 5vw;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 80px;
-    line-height: 80px;
-  }
-}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   h1 {
     font-size: 100px;
     line-height: 100px;
@@ -137,12 +132,12 @@ h3 {
   left: 0;
   top: 0;
 }
-/* @media screen and (min-width: 1300px) {
+@media screen and (min-width: 992px) {
   .mediaQueries {
-    width: 1200px;
+    width: 992px;
     margin: 0 auto;
   }
-} */
+}
 /* konec swapRules */
 
 /* kategorie */
@@ -158,11 +153,6 @@ h3 {
 .itemOfferDetails {
   display: flex;
   flex-direction: column;
-}
-
-.itemOfferDetails img {
-  width: 100%;
-  height: auto;
 }
 
 .userNameOffer {

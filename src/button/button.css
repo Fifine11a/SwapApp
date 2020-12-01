@@ -37,3 +37,7 @@ button:focus {
   padding: 10px;
   margin-bottom: 10px;
 }
+.mailBtn {
+  padding: 10px;
+  font-size: 20px;
+}

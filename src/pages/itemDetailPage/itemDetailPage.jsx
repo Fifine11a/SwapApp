@@ -3,6 +3,7 @@ import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 import db from '../../firestore.js';
 import { useParams } from 'react-router-dom';
 import towns from '../../data/towns.json';
+import './itemDetailPage.css';
 import CategoryDetail from '../categoryDetailPage/categoryDetailPage';
 
 const ItemDetail = () => {
@@ -26,23 +27,36 @@ const ItemDetail = () => {
   return (
     <>
       <div className="itemPage mediaQueries">
-        <div className="header">
+        <div>
           <h1>{product.title}</h1>
         </div>
-        <Breadcrumbs />
+        {/* <Breadcrumbs /> */}
         <div className="itemOfferDetails">
           <img className="itemImg" src={product.imageUrl} />
-          <span className="itemLocation">Lokalita: {city?.name}</span>
-          <span className="itemText">{product.description}</span>
-          <span className="exchangeDemand">
-            Co chci výměnou: {product.swapDescription}
-          </span>
-          <span className="userNameOffer">
-            Výměnu nabízí: {product.userName}
-            <a href={`mailto:${product.email}`}>
-              <button>Chci swapnout</button>
-            </a>
-          </span>
+          <div className="itemSubscription">
+            <div className="locationElm">
+              <span className="label">Lokalita:</span>
+              <span className="itemLocation">{city?.name}</span>
+            </div>
+            <div className="itemTextElm">
+              <span className="label">Co se nabízí:</span>
+              <span className="itemText">{product.description}</span>
+            </div>
+            <div className="itemTextElm">
+              <span className="label">Za co se nabízí:</span>
+              <span className="exchangeDemand">{product.swapDescription}</span>
+            </div>
+            <div className="userNameElm">
+              <span className="label">Kdo nabízí:</span>
+              <span className="userName">{product.userName}</span>
+            </div>
+
+            <div className="mailBtnElm">
+              <a href={`mailto:${product.email}`}>
+                <button className="mailBtn">Chci swapnout</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>
