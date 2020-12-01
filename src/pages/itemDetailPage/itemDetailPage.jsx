@@ -3,6 +3,7 @@ import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 import db from '../../firestore.js';
 import { useParams } from 'react-router-dom';
 import towns from '../../data/towns.json';
+import CategoryDetail from '../categoryDetailPage/categoryDetailPage';
 
 const ItemDetail = () => {
   const { id } = useParams();
@@ -38,7 +39,10 @@ const ItemDetail = () => {
             Co chci výměnou: {product.swapDescription}
           </span>
           <span className="userNameOffer">
-            {product.userName}", kontakt:"{product.email}
+            Výměnu nabízí: {product.userName}
+            <a href={`mailto:${product.email}`}>
+              <button>Chci swapnout</button>
+            </a>
           </span>
         </div>
       </div>
