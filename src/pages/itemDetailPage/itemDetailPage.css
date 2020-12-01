@@ -17,6 +17,9 @@
 }
 .itemOfferDetails img {
   width: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  max-height: 400px;
 }
 .itemTextElm {
   display: flex;
@@ -46,6 +49,9 @@
   .itemSubscription {
     margin-left: 10px;
     width: 40%;
+  }
+  .itemOfferDetails img {
+    max-height: 500px;
   }
 }
 /* @media screen and (min-width: 992px) {
