@@ -60,12 +60,20 @@ h3 {
   font-size: 5vw;
   text-align: center;
 }
-/* @media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 100px;
-    line-height: 110px;
+    line-height: 100px;
   }
-  h2 {
+}
+/*h2 {
     font-size: 80px;
     line-height: 85px;
   }
@@ -155,16 +163,6 @@ h3 {
 .itemOfferDetails img {
   width: 100%;
   height: auto;
-}
-
-.itemTitle {
-  font-weight: 800;
-  margin: 10px;
-}
-
-.itemText {
-  margin: 10px;
-  text-align: left;
 }
 
 .userNameOffer {

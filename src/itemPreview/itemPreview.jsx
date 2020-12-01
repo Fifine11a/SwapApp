@@ -32,9 +32,11 @@ const ItemPreview = (props) => {
       <Link className="itemTitle" to={`/produkt/${itemPreviewId}`}>
         {itemPreview.title}
       </Link>
-      <Link to={`/produkt/${itemPreviewId}`}>{city?.name}</Link>
-      <Link className="userName" to={`/produkt/${itemPreviewId}`}>
-        {itemPreview.userName}
+      <Link className="itemCity" to={`/produkt/${itemPreviewId}`}>
+        kde:{city?.name}
+      </Link>
+      <Link className="itemUser" to={`/produkt/${itemPreviewId}`}>
+        uživatel:{itemPreview.userName}
       </Link>
     </div>
   );
