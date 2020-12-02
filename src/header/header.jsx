@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div className="header">
-      <div className="logo">
+      <div className="headerFirst">
         <Link to="/">
           <img className="logo_male" src={logo} alt="swapApp logo" />
         </Link>
-      </div>
-      <div className="largeBtn headerBtn">
-        <Button title="Nabízím" location="/formular/novy" />
+        <div className="largeBtn headerBtn">
+          <Button title="Nabízím" location="/formular/novy" />
+        </div>
       </div>
       <Search />
     </div>
