@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import homepageImg from '../../img/homepage.jpg';
 import Button from '../../button/button';
 import velkeLogo from '../../img/logo.png';
+import ItemsOverview from '../../itemOverview/itemOverview.jsx';
 
 const HomePage = (props) => {
   return (
