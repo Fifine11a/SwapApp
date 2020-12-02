@@ -4,13 +4,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 20px auto;
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #dee2e6;
 }
 .headerFirst {
   width: 90%;
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -32,7 +34,10 @@
   border: solid 1px #212529;
   padding: 10px;
 }
-
+.headerBtn button:hover {
+  background-color: #ec6333;
+  border: solid 1px #212529;
+}
 @media screen and (min-width: 576px) {
   .logo_male {
     width: 200px;
