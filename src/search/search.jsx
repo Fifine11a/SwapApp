@@ -5,7 +5,7 @@ const Search = () => {
   return (
     <form className="searchForm">
       <fieldset>
-        <input className="searchInput" placeholder="Hledej..." type="search" />
+        <input className="searchInput" placeholder="..." type="search" />
         <button className="searchBtn" type="submit">
           <i className="fa fa-search"></i>
         </button>

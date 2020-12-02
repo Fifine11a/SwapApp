@@ -4,6 +4,7 @@ import '../pages/categoryPage/categoryPage.css';
 import db from '../firestore.js';
 /* import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; */
 import ItemPreview from '../itemPreview/itemPreview.jsx';
+import './itemOverview.css';
 import { Link } from 'react-router-dom';
 
 const ItemOverview = (props) => {
