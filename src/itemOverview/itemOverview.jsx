@@ -13,11 +13,11 @@ const ItemOverview = (props) => {
     db.collection('items')
       .get()
       .then((result) =>
-        result.docs.map((e) => {
-          const data = e.data();
+        result.docs.map((item) => {
+          const data = item.data();
           return {
             ...data,
-            id: e.id,
+            id: item.id,
           };
         }),
       )
@@ -26,11 +26,9 @@ const ItemOverview = (props) => {
 
   return (
     <>
-      {overview.map((products) => (
+      {overview.map((product) => (
         <div className="itemOverviewElm">
-          {(products ?? []).map((item) => (
-            <ItemPreview key={item.id} id={item.id} />
-          ))}
+          <ItemPreview key={product.id} id={product.id} />
         </div>
       ))}
     </>
