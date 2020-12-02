@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import homepageImg from '../../img/homepage.jpg';
+import homepageImg from '../../img/homepage.jpeg';
 import Button from '../../button/button';
 import velkeLogo from '../../img/logo.png';
 import ItemsOverview from '../../itemOverview/itemOverview.jsx';
