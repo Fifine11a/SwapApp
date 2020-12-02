@@ -34,7 +34,7 @@ fieldset {
   content: url(../img/search.png);
   height: 30px;
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .searchForm {
     width: 50%;
   }
@@ -65,4 +65,4 @@ fieldset {
     content: url(../img/search.png);
     height: 30px;
   }
-}
+} */
