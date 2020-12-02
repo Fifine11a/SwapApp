@@ -1,5 +1,5 @@
 .homepageImg {
   max-width: 100%;
   bottom: 0;
-  filter: grayscale();
+  filter: grayscale(70%);
 }
