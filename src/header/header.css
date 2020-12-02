@@ -1,7 +1,3 @@
-.logo_male {
-  width: 50%;
-}
-
 .header {
   display: flex;
   flex-direction: row;
@@ -9,8 +5,27 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px;
+  width: 100%;
+}
+
+.logo_male {
+  width: 60%;
+}
+.logo_male a {
+  width: 50%;
 }
 
 .headerBtn {
-  align-self: center;
+  margin: 0;
+  display: flex;
+}
+.headerBtn a {
+  text-decoration: none;
+}
+.headerBtn button {
+  color: #212529;
+  font-weight: 400;
+  background-color: #dee2e6;
+  border: solid 1px #212529;
+  text-decoration: none;
 }

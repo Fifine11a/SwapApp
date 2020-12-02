@@ -32,10 +32,9 @@ const CategoryDetail = (props) => {
 
   return (
     <div className="CategoryDetail mediaQueries">
-      <div className="header">
-        <h1>{category.name}</h1>
-      </div>
-      <Breadcrumbs />
+      <h1>{category.name}</h1>
+
+      {/* <Breadcrumbs /> */}
       <div className="categoryDetailElm">
         {(category.items ?? []).map((item) => (
           <ItemPreview key={item.id} id={item.id} />

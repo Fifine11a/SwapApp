@@ -17,18 +17,16 @@ body {
   background-color: #dee2e6;
   letter-spacing: 0.1em;
   line-height: 1.5em;
+  font-size: 15px;
 }
 .logo {
   display: flex;
   flex-direction: row-reverse;
 }
 .logo_velke {
-  border-radius: 8px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-top: -3rem;
+  margin: 0 auto;
+  width: 90%;
 }
 
 h1 {
@@ -36,10 +34,10 @@ h1 {
   text-align: center;
   font-family: 'Amatic SC', Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 15vw;
-  line-height: 17vw;
+  font-size: 60px;
+  line-height: 60px;
   margin: 0 auto;
-  margin-bottom: 5vw;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -60,19 +58,24 @@ h3 {
   font-size: 5vw;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
+
+@media screen and (min-width: 576px) {
   h1 {
     font-size: 100px;
-    line-height: 110px;
+    line-height: 100px;
   }
-  h2 {
+  .logo_velke {
+    width: 50%;
+  }
+}
+/*h2 {
     font-size: 80px;
     line-height: 85px;
   }
   h3 {
     font-size: 5vw;
-  }
-}
+  } 
+}*/
 
 .left {
   max-width: 200px;
@@ -150,21 +153,6 @@ h3 {
 .itemOfferDetails {
   display: flex;
   flex-direction: column;
-}
-
-.itemOfferDetails img {
-  width: 100%;
-  height: auto;
-}
-
-.itemTitle {
-  font-weight: 800;
-  margin: 10px;
-}
-
-.itemText {
-  margin: 10px;
-  text-align: left;
 }
 
 .userNameOffer {

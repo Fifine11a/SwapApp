@@ -14,9 +14,7 @@ button:focus {
 
 .largeBtn {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
+  margin: 0 20px;
 }
 
 .largeBtn button {
@@ -24,4 +22,22 @@ button:focus {
   line-height: 20px;
   margin-bottom: 10px;
   padding: 20px;
+  font-weight: 400;
+}
+.largeBtn.categoryBtn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.largeBtn.categoryBtn button {
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.mailBtn {
+  padding: 10px;
+  font-size: 20px;
 }
