@@ -38,6 +38,7 @@ const HomePage = (props) => {
         , ať je to příjemný a užitečný zážitek. Swap do každé rodiny!
       </p>
       <img className="homepageImg" src={homepageImg} alt="útulný domov" />
+      <ItemsOverview />
       <div className="largeBtn">
         <Button title="Hledám" location="/kategorie" />
       </div>
