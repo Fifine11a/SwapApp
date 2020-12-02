@@ -4,8 +4,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin: 20px auto;
   width: 100%;
+}
+.headerFirst {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo_male {
@@ -16,6 +23,7 @@
 }
 
 .headerBtn {
+  width: 50%;
   margin: 0;
   display: flex;
 }
@@ -27,5 +35,4 @@
   font-weight: 400;
   background-color: #dee2e6;
   border: solid 1px #212529;
-  text-decoration: none;
 }
