@@ -31,7 +31,7 @@ const CategoryDetail = (props) => {
   }
 
   return (
-    <div className="CategoryDetail mediaQueries">
+    <div className="categoryDetail mediaQueries">
       <h1>{category.name}</h1>
 
       {/* <Breadcrumbs /> */}

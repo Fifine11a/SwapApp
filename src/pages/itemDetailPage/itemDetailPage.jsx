@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import towns from '../../data/towns.json';
 import './itemDetailPage.css';
 import CategoryDetail from '../categoryDetailPage/categoryDetailPage';
+import ItemsOverview from '../../itemOverview/itemOverview';
 
 const ItemDetail = () => {
   const { id } = useParams();
@@ -58,6 +59,7 @@ const ItemDetail = () => {
             </div>
           </div>
         </div>
+        <ItemsOverview title="V nabídce máme také:" sort="title" max="4" />
       </div>
     </>
   );

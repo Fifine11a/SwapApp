@@ -43,7 +43,7 @@ const HomePage = (props) => {
       <div className="largeBtn">
         <Button title="Hledám" location="/kategorie" />
       </div>
-      <ItemsOverview />
+      <ItemsOverview title="V nabídce například:" sort="description" max="6" />
     </div>
   );
 };
