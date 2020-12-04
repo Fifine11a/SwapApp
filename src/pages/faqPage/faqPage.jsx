@@ -1,9 +1,10 @@
 import React from 'react';
+import './faqPage.css';
 
 const FaqPage = () => {
   return (
-    <div className="rulesPage mediaQueries">
-      <div className="header">
+    <div className="rulesPage">
+      <div>
         <h1>Jak na to?</h1>
       </div>
       <div className="margin_bottom">

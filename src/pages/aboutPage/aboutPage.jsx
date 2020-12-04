@@ -1,8 +1,9 @@
 import React from 'react';
+import './aboutPage.css';
 
 const AboutUs = () => {
   return (
-    <>
+    <div className="aboutUsPage">
       <h1>SwapApp by Marie&Magdalena</h1>
       <p>
         Tahle aplikace je náš absolventský projekt v rámci podzimního běhu
@@ -39,7 +40,7 @@ const AboutUs = () => {
           Unsplash
         </a>
       </span>
-    </>
+    </div>
   );
 };
 
