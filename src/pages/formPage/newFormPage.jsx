@@ -121,7 +121,7 @@ const NewForm = (props) => {
           </div>
           <div className="inner-wrap innerWrapCategory">
             <label>
-              Název předmětu{' '}
+              Název předmětu *{' '}
               <input
                 required
                 value={title}
@@ -133,7 +133,7 @@ const NewForm = (props) => {
               />
             </label>
             <label>
-              <div>Kategorie předmětu</div>
+              <div>Kategorie předmětu *</div>
               <div className="radio">
                 {categories.map((category) => (
                   <React.Fragment key={category.id}>
@@ -151,7 +151,7 @@ const NewForm = (props) => {
               </div>
             </label>
             <label>
-              Popis předmětu{' '}
+              Popis předmětu *{' '}
               <textarea
                 required
                 value={description}
@@ -162,7 +162,7 @@ const NewForm = (props) => {
               ></textarea>
             </label>
             <label>
-              Za co chci vyměnit{' '}
+              Za co chci vyměnit *{' '}
               <textarea
                 required
                 value={swapDescription}
@@ -173,7 +173,7 @@ const NewForm = (props) => {
               ></textarea>
             </label>
             <div>
-              Lokalita, kde se uskuteční výměna
+              Lokalita, kde se uskuteční výměna *
               <select
                 value={cityId}
                 onChange={(event) => setCityId(event.target.value)}
@@ -186,36 +186,8 @@ const NewForm = (props) => {
               </select>
             </div>
           </div>
-
           <div className="section">
-            <span>2</span>Jméno a kontakt
-          </div>
-          <div className="inner-wrap">
-            <label>
-              jméno{' '}
-              <input
-                required
-                value={userName}
-                type="text"
-                name="field1"
-                maxLength="30"
-                onChange={(event) => setUserName(event.target.value)}
-              />
-            </label>
-            <label>
-              e-mail{' '}
-              <input
-                required
-                value={email}
-                type="email"
-                name="field2"
-                onChange={(event) => setEmail(event.target.value)}
-              />
-            </label>
-          </div>
-
-          <div className="section">
-            <span>3</span>Nahrání fotografie
+            <span>2</span>Nahrání fotografie
           </div>
           <div className="inner-wrap">
             <input
@@ -227,11 +199,39 @@ const NewForm = (props) => {
               onChange={handleSelectImage}
             />
           </div>
-          <div className="button-section">
+
+          <div className="section">
+            <span>3</span>Jméno a kontakt
+          </div>
+          <div className="inner-wrap">
+            <label>
+              jméno *{' '}
+              <input
+                required
+                value={userName}
+                type="text"
+                name="field1"
+                maxLength="30"
+                onChange={(event) => setUserName(event.target.value)}
+              />
+            </label>
+            <label>
+              e-mail *{' '}
+              <input
+                required
+                value={email}
+                type="email"
+                name="field2"
+                onChange={(event) => setEmail(event.target.value)}
+              />
+            </label>
+          </div>
+
+          <div className="btnSection">
             <input type="submit" name="Sign Up" />
             <span className="privacy-policy">
               <input required type="checkbox" name="field7" />
-              <Link to="/faq">Souhlas s podmínkami a pravidly webu</Link>
+              <Link to="/faq">Souhlas s podmínkami a pravidly</Link>
             </span>
           </div>
         </form>
