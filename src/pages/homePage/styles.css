@@ -26,6 +26,8 @@
   width: 90%;
   max-width: 300px;
   color: #dee2e6;
+  opacity: 75%;
+  margin-left: 20px;
 }
 .homepageImg {
   filter: grayscale(70%);
