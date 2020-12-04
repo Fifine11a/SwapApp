@@ -21,9 +21,14 @@ const AboutUs = () => {
         vzájemnou podporu.
       </p>
       <p>
-        Náš nekonečný vděk patří taky Lukášovi, Tomášovi a Rosťovi z Pipedrive
+        Náš nekonečný vděk patří taky Lukášovi, Rosťovi a Tomášovi z Pipedrive
         za mentorování a láskyplnou péči. A fotbálkové bitvy. A víno.
       </p>
+      <div className="mailBtnElm">
+        <a href={`mailto: swapapp@zohomail.eu`}>
+          <button className="mailBtn">Napište nám</button>
+        </a>
+      </div>
       <span>
         Homepage photo by{' '}
         <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
