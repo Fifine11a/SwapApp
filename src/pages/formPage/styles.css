@@ -17,8 +17,9 @@
   color: #212529;
   margin-bottom: 20px;
 }
-.formStyle input:required:invalid {
-  background-color: #ec6333;
+.formStyle input:required:invalid,
+.formStyle textarea:required:invalid {
+  border-bottom: 2px solid #ec6333;
 }
 .formStyle input[type='text'],
 .formStyle input[type='date'],
