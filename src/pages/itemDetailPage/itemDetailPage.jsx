@@ -12,6 +12,7 @@ const ItemDetail = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     db.collection('items')
       .doc(id)
       .get()

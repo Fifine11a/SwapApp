@@ -29,14 +29,14 @@ const ItemOverview = (props) => {
   }, []);
 
   return (
-    <>
+    <div className="itemOverview">
       <h2>{props.title}</h2>
       {overview.map((product) => (
         <div className="itemOverviewElm">
           <ItemPreview key={product.id} id={product.id} />
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
