@@ -26,8 +26,8 @@ const MainCategory = (props) => {
   }, []);
   return (
     <div className="demandPage">
-      <h1>Hledám</h1>
-      <div className="categoryBtn">
+      <h1>Kategorie</h1>
+      <div className="categoryBtns">
         {categories.map((category) => (
           <Link
             key={category.id}

@@ -15,7 +15,7 @@ button:focus {
   border: solid 1px #212529;
 }
 
-.categoryBtn {
+.categoryBtns {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -23,7 +23,7 @@ button:focus {
   justify-content: space-between;
 }
 
-.categoryBtn button {
+.categoryBtns button {
   font-size: 15px;
   padding: 10px;
   margin-bottom: 10px;
