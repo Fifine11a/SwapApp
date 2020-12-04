@@ -8,7 +8,7 @@ import ItemsOverview from '../../itemOverview/itemOverview.jsx';
 
 const HomePage = (props) => {
   return (
-    <div className="mainPage mediaQueries">
+    <div className="mainPage">
       <img className="logo_velke" src={velkeLogo} alt="SwapApp logo" />
       {/* <p>
         Jsme Marie&Magdalena a vítáme Tě na prvním a zatím jediném swapovacím

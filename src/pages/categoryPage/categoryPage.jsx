@@ -38,7 +38,7 @@ const MainCategory = (props) => {
           </Link>
         ))}
       </div>
-      <div className="itemsOverview">
+      <div className="itemsOverviewElm">
         <ItemsOverview title="V nabídce:" sort="description" />
       </div>
     </div>

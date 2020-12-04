@@ -59,7 +59,9 @@ const ItemDetail = () => {
             </div>
           </div>
         </div>
-        <ItemsOverview title="V nabídce máme také:" sort="title" max="4" />
+        <div className="itemsOverviewElm">
+          <ItemsOverview title="V nabídce máme také:" sort="title" max="4" />
+        </div>
       </div>
     </>
   );

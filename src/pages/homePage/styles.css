@@ -1,5 +1,7 @@
 .mainPage {
   margin-top: 160px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo_velke {

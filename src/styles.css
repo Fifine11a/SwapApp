@@ -38,7 +38,6 @@ h2 {
   font-family: 'Amatic SC', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 45px;
-  /* margin: 0 auto; */
   padding: 5px 0 5px 15px;
   line-height: 45px;
 }
@@ -56,14 +55,6 @@ h3 {
     line-height: 100px;
   }
 }
-/*h2 {
-    font-size: 80px;
-    line-height: 85px;
-  }
-  h3 {
-    font-size: 5vw;
-  } 
-}*/
 
 .left {
   max-width: 200px;
@@ -128,15 +119,6 @@ h3 {
 }
 /* konec swapRules */
 
-/* kategorie */
-.breadcrumbsBtn {
-  display: flex;
-  justify-content: center;
-  margin: 50px 0;
-}
-
-/* konec kategorie */
-
 /* detail položky */
 .itemOfferDetails {
   display: flex;
@@ -153,14 +135,3 @@ h3 {
   color: #ec6333;
 }
 /* konec detailu položky */
-/* homepage*/
-.mainPage {
-  display: flex;
-  flex-direction: column;
-}
-
-.homepageImg {
-  max-width: 100%;
-  bottom: 0;
-}
-/* konec homepage*/
