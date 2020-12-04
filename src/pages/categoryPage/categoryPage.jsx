@@ -31,18 +31,16 @@ const MainCategory = (props) => {
         {categories.map((category) => (
           <Link
             key={category.id}
-            className="category searchCategoryClothes"
+            className="category"
             to={`/kategorie/${category.id}`}
           >
             <button>{category.name}</button>
           </Link>
         ))}
       </div>
-      <ItemsOverview
-        className="homepageTitle"
-        title="V nabídce:"
-        sort="description"
-      />
+      <div className="itemsOverview">
+        <ItemsOverview title="V nabídce:" sort="description" />
+      </div>
     </div>
   );
 };

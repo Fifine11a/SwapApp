@@ -36,7 +36,7 @@ const ItemDetail = () => {
           <img className="itemImg" src={product.imageUrl} />
           <div className="itemSubscription">
             <div className="locationElm">
-              <span className="label">Lokalita:</span>
+              <span className="label"></span>
               <span className="itemLocation">{city?.name}</span>
             </div>
             <div className="itemTextElm">
