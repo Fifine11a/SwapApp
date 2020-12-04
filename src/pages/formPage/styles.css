@@ -17,7 +17,7 @@
 .formStyle label {
   display: block;
   color: #212529;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .formStyle input[type='text'],
 .formStyle input[type='date'],
@@ -88,4 +88,14 @@
 .innerWrapCategory {
   display: flex;
   flex-direction: column;
+}
+
+.radio {
+  display: flex;
+  padding: 8px;
+}
+
+.radio label {
+  padding: 0 8px 10px;
+  margin-bottom: 0px;
 }
