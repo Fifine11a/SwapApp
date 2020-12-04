@@ -1,5 +1,5 @@
 .mainPage {
-  padding-top: 150px;
+  margin-top: 150px;
 }
 
 .logo_velke {
@@ -7,6 +7,9 @@
   margin: 0 auto;
   width: 90%;
   margin-bottom: 15px;
+}
+.homepageTitle h2 {
+  width: 100%;
 }
 .homepageImgElm {
   display: flex;
@@ -30,6 +33,7 @@
   height: 400px;
   object-fit: cover;
   object-position: 50% 108%;
+  margin-bottom: 20px;
 }
 
 .itemImg img {
@@ -38,6 +42,9 @@
   border-radius: 4px;
   object-fit: cover;
   object-position: 50% 50%;
+}
+.mainPageTextBtn button {
+  font-size: 15px;
 }
 
 @media screen and (min-width: 576px) {

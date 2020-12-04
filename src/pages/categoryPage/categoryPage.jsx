@@ -4,6 +4,7 @@ import './categoryPage.css';
 import db from '../../firestore.js';
 /* import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; */
 import Search from '../../search/search.jsx';
+import ItemsOverview from '../../itemOverview/itemOverview.jsx';
 import { Link } from 'react-router-dom';
 
 const MainCategory = (props) => {
@@ -37,6 +38,11 @@ const MainCategory = (props) => {
           </Link>
         ))}
       </div>
+      <ItemsOverview
+        className="homepageTitle"
+        title="V nabídce:"
+        sort="description"
+      />
     </div>
   );
 };

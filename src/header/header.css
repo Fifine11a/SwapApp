@@ -24,20 +24,16 @@
 .headerBtn {
   margin: 0;
 }
+.headerBtn button {
+  padding: 10px;
+  font-size: 25px;
+}
+.headerBtn button::first-letter {
+  font-size: 30px;
+}
 
 .headerBtn a {
   text-decoration: none;
-}
-.headerBtn button {
-  color: #212529;
-  font-weight: 400;
-  background-color: #dee2e6;
-  border: solid 1px #212529;
-  padding: 10px;
-}
-.headerBtn button:hover {
-  background-color: #ec6333;
-  border: solid 1px #212529;
 }
 @media screen and (min-width: 576px) {
   .logo_male {

@@ -40,10 +40,15 @@ const HomePage = (props) => {
         </p>
         <img className="homepageImg" src={homepageImg} alt="útulný domov" />
       </div>
-      <div className="largeBtn">
+      <div className="largeBtn headerBtn">
         <Button title="Hledám" location="/kategorie" />
       </div>
-      <ItemsOverview title="V nabídce například:" sort="description" max="6" />
+      <ItemsOverview
+        className="homepageTitle"
+        title="V nabídce například:"
+        sort="description"
+        max="6"
+      />
     </div>
   );
 };

@@ -38,7 +38,7 @@ h2 {
   font-family: 'Amatic SC', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 45px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 5px 0 5px 15px;
   line-height: 45px;
 }

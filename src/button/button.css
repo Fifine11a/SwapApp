@@ -1,14 +1,18 @@
 button {
-  background-color: #212529;
-  color: #dee2e6;
+  color: #212529;
+  font-weight: 400;
+  background-color: #dee2e6;
+  border: solid 1px #212529;
+  padding: 5px;
   border-radius: 4px;
-  box-shadow: none;
-  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 button:hover,
 button:focus {
-  color: #ec6333;
+  background-color: #ec6333;
+  border: solid 1px #212529;
 }
 
 .largeBtn {
@@ -16,14 +20,11 @@ button:focus {
   margin: 0 20px;
 }
 
-.largeBtn button {
+/* .largeBtn button {
   font-size: 25px;
   line-height: 20px;
-  margin-bottom: 10px;
-  padding: 20px;
-  font-weight: 400;
-}
-.largeBtn.categoryBtn {
+} */
+.categoryBtn {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -31,12 +32,11 @@ button:focus {
   justify-content: space-between;
 }
 
-.largeBtn.categoryBtn button {
+.categoryBtn button {
   font-size: 15px;
   padding: 10px;
   margin-bottom: 10px;
 }
 .mailBtn {
   padding: 10px;
-  font-size: 20px;
 }
