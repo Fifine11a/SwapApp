@@ -8,12 +8,19 @@
   display: flex;
   font-weight: 600;
 }
-.locationElm:before {
-}
 
 .locationElm:before {
   content: '';
   background-image: url(../../img/location.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.userNameElm:before {
+  content: '';
+  background-image: url(../../img/user.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 25px;

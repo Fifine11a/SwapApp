@@ -48,7 +48,6 @@ const ItemDetail = () => {
               <span className="exchangeDemand">{product.swapDescription}</span>
             </div>
             <div className="userNameElm">
-              <span className="label">Kdo nabízí:</span>
               <span className="userName">{product.userName}</span>
             </div>
 

@@ -33,10 +33,10 @@ const ItemPreview = (props) => {
         {itemPreview.title}
       </Link>
       <Link className="itemCity" to={`/produkt/${itemPreviewId}`}>
-        kde:{city?.name}
+        {city?.name}
       </Link>
       <Link className="itemUser" to={`/produkt/${itemPreviewId}`}>
-        uživatel:{itemPreview.userName}
+        {itemPreview.userName}
       </Link>
     </div>
   );

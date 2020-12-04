@@ -29,11 +29,32 @@
   color: #212529;
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 .itemTitle {
   font-size: 20px;
   font-weight: 600;
 }
+.itemCity:before {
+  content: '';
+  background-image: url(../img/location.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.itemUser:before {
+  content: '';
+  background-image: url(../img/user.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .categoryDetailElm.itemImg {
     width: 49%;
