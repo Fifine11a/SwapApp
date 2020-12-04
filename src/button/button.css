@@ -15,15 +15,6 @@ button:focus {
   border: solid 1px #212529;
 }
 
-.largeBtn {
-  display: flex;
-  margin: 0 20px;
-}
-
-/* .largeBtn button {
-  font-size: 25px;
-  line-height: 20px;
-} */
 .categoryBtn {
   display: flex;
   flex-wrap: wrap;

@@ -40,7 +40,7 @@ const HomePage = (props) => {
         </p>
         <img className="homepageImg" src={homepageImg} alt="útulný domov" />
       </div>
-      <div className="largeBtn headerBtn">
+      <div className="headerBtn demandBtn">
         <Button title="Hledám" location="/kategorie" />
       </div>
       <ItemsOverview

@@ -1,10 +1,9 @@
+.categoryDetail {
+  margin-top: 160px;
+}
 .categoryDetailElm {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.categoryDetail {
-  margin-top: 250px;
 }

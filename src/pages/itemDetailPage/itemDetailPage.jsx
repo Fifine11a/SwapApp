@@ -27,7 +27,7 @@ const ItemDetail = () => {
 
   return (
     <>
-      <div className="itemPage mediaQueries">
+      <div className="itemPage">
         <div>
           <h1>{product.title}</h1>
         </div>

@@ -1,5 +1,5 @@
 .mainPage {
-  margin-top: 150px;
+  margin-top: 160px;
 }
 
 .logo_velke {
@@ -35,22 +35,30 @@
   object-position: 50% 108%;
   margin-bottom: 20px;
 }
+.itemImg {
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
 .itemImg img {
   width: 100%;
+  height: 300px;
   max-width: 300px;
   border-radius: 4px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: 50% 50%;
 }
-.mainPageTextBtn button {
-  font-size: 15px;
+.headerBtn.demandBtn {
+  margin: 0 auto;
+}
+.headerBtn.demandBtn button {
+  padding: 10px 60px;
 }
 
 @media screen and (min-width: 576px) {
-  .mainPage {
-    padding-top: 175px;
-  }
   .logo_velke {
     width: 50%;
   }

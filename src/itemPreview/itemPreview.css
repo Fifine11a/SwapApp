@@ -18,7 +18,7 @@
   height: 300px;
   max-width: 300px;
   border-radius: 4px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: 50% 50%;
 }
 
