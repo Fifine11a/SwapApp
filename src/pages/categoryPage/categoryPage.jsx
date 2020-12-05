@@ -11,6 +11,7 @@ const MainCategory = (props) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     db.collection('categories')
       .get()
       .then((result) =>
