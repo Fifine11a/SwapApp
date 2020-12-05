@@ -18,7 +18,7 @@ const ItemPreview = (props) => {
       .then((data) => setItem(data));
   }, [itemPreviewId]);
 
-  if (!itemPreview) {
+  if (!itemPreview || itemPreview.status === 'deactivated') {
     return null;
   }
 
