@@ -77,9 +77,10 @@
     max-height: 500px;
   }
 }
-/* @media screen and (min-width: 992px) {
-  .itemOfferDetails {
+@media screen and (min-width: 992px) {
+  .itemOfferDetails,
+  .itemsOverviewElm {
     width: 992px;
     margin: 0 auto;
   }
-} */
+}

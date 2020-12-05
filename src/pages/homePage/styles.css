@@ -1,5 +1,7 @@
 .mainPage {
   margin-top: 160px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo_velke {
@@ -66,5 +68,12 @@
   }
   .homepageImg {
     height: 585px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .itemsOverviewElm {
+    width: 992px;
+    margin: 0 auto;
   }
 }
