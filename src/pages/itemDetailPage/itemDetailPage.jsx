@@ -47,12 +47,8 @@ const ItemDetail = () => {
     <>
       <div className="itemPage">
         <Link className="backTo" to={`/kategorie`}>
-          <img
-            className="backToBullet"
-            src={leftBullet}
-            alt="zpět na kategorie"
-          />{' '}
-          <span>zpět na kategorie</span>
+          <img className="backToBullet" src={leftBullet} alt="zpět kategorie" />{' '}
+          <span>kategorie</span>
         </Link>
         <>
           <h1>{product.title}</h1>

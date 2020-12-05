@@ -104,10 +104,14 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .itemPage,
   .itemOfferDetails,
   .itemsOverviewElm {
     width: 992px;
     margin: 0 auto;
+  }
+  .itemPage {
+    margin-top: 170px;
   }
 }
 
