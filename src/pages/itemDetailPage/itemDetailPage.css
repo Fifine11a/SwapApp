@@ -1,7 +1,8 @@
 .itemPage {
   margin-top: 170px;
 }
-.itemOfferDetails {
+.itemOfferDetails,
+.bookedItem {
   margin: 20px;
 }
 
@@ -80,8 +81,27 @@
   flex-direction: row-reverse;
 }
 
+.deactivatedItem {
+  margin-top: 170px;
+}
+.deletedItem img {
+  filter: grayscale(100%);
+}
+.bookedItem:before {
+  content: '';
+  background-image: url(../../img/reserved.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  bottom: -160px;
+  position: absolute;
+}
+
 @media screen and (min-width: 576px) {
-  .itemOfferDetails {
+  .itemOfferDetails,
+  .bookedItem {
     display: flex;
     flex-direction: row;
   }
@@ -99,8 +119,9 @@
     margin-left: 10px;
     width: 40%;
   }
-  .itemOfferDetails img {
-    max-height: 500px;
+
+  .bookedItem:before {
+    bottom: -170px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -113,8 +134,4 @@
   .itemPage {
     margin-top: 170px;
   }
-}
-
-.deactivatedItem {
-  margin-top: 170px;
 }

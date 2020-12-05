@@ -53,8 +53,11 @@ const ItemDetail = () => {
         <>
           <h1>{product.title}</h1>
         </>
-        {/* <Breadcrumbs /> */}
-        <div className="itemOfferDetails">
+        <div
+          className="itemOfferDetails" /* {
+            deleted ? 'deletedItem' : booked ? 'bookedItem' : 'itemOfferDetails'
+          } */
+        >
           <img className="itemImg" src={product.imageUrl} />
           <div className="itemSubscription">
             <div className="locationElm">
