@@ -1,5 +1,9 @@
 [
   {
+    "id": 0,
+    "name": "Vyberte město ze seznamu"
+  },
+  {
     "id": 1,
     "name": "Praha"
   },

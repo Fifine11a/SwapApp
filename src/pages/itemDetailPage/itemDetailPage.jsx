@@ -26,6 +26,18 @@ const ItemDetail = () => {
     return null;
   }
 
+  if (product.status === 'deactivated') {
+    return (
+      <div className="deactivatedItem">
+        <ItemsOverview
+          title="Produkt byl stáhnutý z nabídky. Aktuálně můžeš swapnout například:"
+          sort="title"
+          max="6"
+        />
+      </div>
+    );
+  }
+
   const city = towns.find((city) => city.id === parseInt(product.cityId));
 
   const deleteItem = (e) => {
@@ -60,7 +72,7 @@ const ItemDetail = () => {
               <span className="userName">{product.userName}</span>
             </div>
             <div className="itemStatusBtnElm">
-              <ItemBookedBtn booked={false} />
+              <ItemBookedBtn booked={product.status === 'booked'} />
               <button className="deleteBtn" onClick={deleteItem}>
                 Deaktivovat
               </button>
