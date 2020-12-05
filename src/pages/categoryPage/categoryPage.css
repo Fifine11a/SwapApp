@@ -1,5 +1,7 @@
 .demandPage {
   margin-top: 160px;
+  display: flex;
+  flex-direction: column;
 }
 .category {
   width: unset;
