@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemPreview from '../../itemPreview/itemPreview';
 import db from '../../firestore.js';
+import leftBullet from '../../img/left_li_bullet.png';
+import { Link } from 'react-router-dom';
 
 import './categoryDetailPage.css';
 import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
@@ -31,7 +33,15 @@ const CategoryDetail = (props) => {
   }
 
   return (
-    <div className="categoryDetail mediaQueries">
+    <div className="categoryDetail">
+      <Link className="backTo" to={`/kategorie`}>
+        <img
+          className="backToBullet"
+          src={leftBullet}
+          alt="zpět na kategorie"
+        />{' '}
+        <span>kategorie</span>
+      </Link>
       <h1>{category.name}</h1>
 
       {/* <Breadcrumbs /> */}

@@ -9,6 +9,8 @@ import ItemsOverview from '../../itemOverview/itemOverview';
 import firebase from 'firebase';
 import ItemBookedBtn from '../../button/ItemBookedBtn';
 import ItemDeletedBtn from '../../button/ItemDeletedBtn';
+import leftBullet from '../../img/left_li_bullet.png';
+import { Link } from 'react-router-dom';
 
 const ItemDetail = () => {
   const { id } = useParams();
@@ -44,9 +46,17 @@ const ItemDetail = () => {
   return (
     <>
       <div className="itemPage">
-        <div>
+        <Link className="backTo" to={`/kategorie`}>
+          <img
+            className="backToBullet"
+            src={leftBullet}
+            alt="zpět na kategorie"
+          />{' '}
+          <span>zpět na kategorie</span>
+        </Link>
+        <>
           <h1>{product.title}</h1>
-        </div>
+        </>
         {/* <Breadcrumbs /> */}
         <div className="itemOfferDetails">
           <img className="itemImg" src={product.imageUrl} />
