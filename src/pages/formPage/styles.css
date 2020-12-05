@@ -1,5 +1,5 @@
 .offerPage {
-  margin-top: 160px;
+  margin-top: 170px;
 }
 .formStyle {
   width: 90%;
@@ -128,6 +128,6 @@ input::placeholder {
   .offerPage {
     width: 992px;
     margin: 0 auto;
-    margin-top: 160px;
+    margin-top: 170px;
   }
 }

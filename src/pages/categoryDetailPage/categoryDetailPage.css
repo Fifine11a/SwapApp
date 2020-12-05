@@ -1,5 +1,5 @@
 .categoryDetail {
-  margin-top: 160px;
+  margin-top: 170px;
   display: flex;
   flex-direction: column;
 }
@@ -8,4 +8,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .categoryDetail {
+    width: 992px;
+    margin: 0 auto;
+    margin-top: 170px;
+  }
 }

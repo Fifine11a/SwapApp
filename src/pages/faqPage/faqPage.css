@@ -1,5 +1,5 @@
 .rulesPage {
-  margin-top: 160px;
+  margin-top: 170px;
 }
 .swap_lists {
   font-size: 18px;
@@ -55,6 +55,6 @@
   .mediaQueries {
     width: 992px;
     margin: 0 auto;
-    margin-top: 160px;
+    margin-top: 170px;
   }
 }
