@@ -105,6 +105,13 @@ const NewForm = (props) => {
     return null;
   }
 
+  const cityCheck = (e) => {
+    if (!cityId >= 1) {
+      event.preventDefault();
+      alert('Vyberte prosím lokalitu, kde chcete uskutečnit výměnu.');
+    }
+  };
+
   return (
     <div className="offerPage mediaQueries">
       {' '}
@@ -175,7 +182,6 @@ const NewForm = (props) => {
             <div>
               Lokalita, kde se uskuteční výměna *
               <select
-                required
                 value={cityId}
                 onChange={(event) => setCityId(event.target.value)}
               >
@@ -229,7 +235,7 @@ const NewForm = (props) => {
           </div>
 
           <div className="btnSection">
-            <input type="submit" name="Sign Up" />
+            <input onClick={cityCheck} type="submit" name="Sign Up" />
             <span className="privacy-policy">
               <input required type="checkbox" name="field7" />
               <Link to="/faq">Souhlas s podmínkami a pravidly</Link>

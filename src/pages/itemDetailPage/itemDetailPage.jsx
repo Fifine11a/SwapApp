@@ -30,7 +30,7 @@ const ItemDetail = () => {
     return (
       <div className="deactivatedItem">
         <ItemsOverview
-          title="Moc nás to mrzí, tenhle produkt už nemáme. Aktuálně můžeš swapnout například:"
+          title="Produkt byl stáhnutý z nabídky. Aktuálně můžeš swapnout například:"
           sort="title"
           max="6"
         />
