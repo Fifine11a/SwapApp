@@ -15,19 +15,6 @@ button:focus {
   border: solid 1px #212529;
 }
 
-.categoryBtns {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.categoryBtns button {
-  font-size: 15px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
 .mailBtn {
   padding: 10px;
   background-color: #ec6333;

@@ -1,5 +1,7 @@
 .categoryDetail {
   margin-top: 160px;
+  display: flex;
+  flex-direction: column;
 }
 .categoryDetailElm {
   display: flex;

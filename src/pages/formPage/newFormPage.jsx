@@ -136,7 +136,7 @@ const NewForm = (props) => {
               <div>Kategorie předmětu *</div>
               <div className="radio">
                 {categories.map((category) => (
-                  <React.Fragment key={category.id}>
+                  <span className="radioElm" key={category.id}>
                     <input
                       required
                       type="radio"
@@ -146,7 +146,7 @@ const NewForm = (props) => {
                       onChange={(event) => setCategoryId(event.target.value)}
                     />
                     <label htmlFor={category.id}>{category.name}</label>
-                  </React.Fragment>
+                  </span>
                 ))}
               </div>
             </label>
@@ -175,6 +175,7 @@ const NewForm = (props) => {
             <div>
               Lokalita, kde se uskuteční výměna *
               <select
+                required
                 value={cityId}
                 onChange={(event) => setCityId(event.target.value)}
               >

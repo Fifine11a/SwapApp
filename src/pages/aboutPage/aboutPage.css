@@ -1,3 +1,15 @@
 .aboutUsPage {
+  margin: 20px;
   margin-top: 160px;
+}
+.aboutUsPage p {
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 992px) {
+  .aboutUsPage {
+    width: 992px;
+    margin: 0 auto;
+    margin-top: 160px;
+  }
 }

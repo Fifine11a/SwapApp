@@ -7,7 +7,7 @@ const FaqPage = () => {
       <div>
         <h1>Jak na to?</h1>
       </div>
-      <div className="margin_bottom">
+      <div>
         <h2>Hledám</h2>
         <ul className="swap_demand">
           <li>

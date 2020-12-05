@@ -75,5 +75,6 @@
   .itemsOverviewElm {
     width: 992px;
     margin: 0 auto;
+    margin-top: 160px;
   }
 }
