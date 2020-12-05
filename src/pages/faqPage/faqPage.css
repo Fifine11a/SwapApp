@@ -1,3 +1,59 @@
 .rulesPage {
   margin-top: 160px;
 }
+.swap_lists {
+  font-size: 18px;
+  line-height: 2em;
+  padding-right: 20px;
+}
+
+.swap_demand,
+.swap_offer {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.rulesPage li {
+  margin: 0 20px;
+}
+
+.swap_demand li,
+.swap_offer li {
+  position: relative;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.swap_demand li::before {
+  content: ' ';
+  background-image: url('../../img/left_li_bullet.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 10px;
+}
+
+.swap_offer li::before {
+  content: ' ';
+  background-image: url('../../img/right_li_bullet.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media screen and (min-width: 992px) {
+  .mediaQueries {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
