@@ -7,6 +7,7 @@ import './itemDetailPage.css';
 import CategoryDetail from '../categoryDetailPage/categoryDetailPage';
 import ItemsOverview from '../../itemOverview/itemOverview';
 import firebase from 'firebase';
+import ItemBookedBtn from '../../button/ItemBookedBtn';
 
 const ItemDetail = () => {
   const { id } = useParams();
@@ -26,12 +27,6 @@ const ItemDetail = () => {
   }
 
   const city = towns.find((city) => city.id === parseInt(product.cityId));
-
-  const bookItem = (e) => {
-    db.collection('items').doc(`${id}`).update({
-      status: `booked`,
-    });
-  };
 
   const deleteItem = (e) => {
     db.collection('items').doc(`${id}`).update({
@@ -65,9 +60,7 @@ const ItemDetail = () => {
               <span className="userName">{product.userName}</span>
             </div>
             <div className="itemStatusBtnElm">
-              <button className="bookedBtn" onClick={bookItem}>
-                Rezervovat
-              </button>
+              <ItemBookedBtn booked={false} />
               <button className="deleteBtn" onClick={deleteItem}>
                 Deaktivovat
               </button>
