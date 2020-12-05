@@ -106,7 +106,7 @@ const NewForm = (props) => {
   }
 
   return (
-    <div className="offerPage mediaQueries">
+    <div className="offerPage">
       {' '}
       <div>
         <h1>Nabízím</h1>
