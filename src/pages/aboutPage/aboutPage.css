@@ -1,6 +1,7 @@
 .aboutUsPage {
+  margin: 20px;
   margin-top: 160px;
 }
 .aboutUsPage p {
-  margin: 0 20px;
+  margin: 20px auto;
 }
