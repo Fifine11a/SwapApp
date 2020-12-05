@@ -28,11 +28,15 @@ const ItemDetail = () => {
   const city = towns.find((city) => city.id === parseInt(product.cityId));
 
   const bookItem = (e) => {
-    db.collection('items')
-      .doc(`${id}`)
-      .update({
-        status: firebase.firestore.FieldValue.arrayUnion(`booked`),
-      });
+    db.collection('items').doc(`${id}`).update({
+      status: `booked`,
+    });
+  };
+
+  const deleteItem = (e) => {
+    db.collection('items').doc(`${id}`).update({
+      status: `deactivated`,
+    });
   };
 
   return (
@@ -64,7 +68,9 @@ const ItemDetail = () => {
               <button className="bookedBtn" onClick={bookItem}>
                 Rezervovat
               </button>
-              <button className="deleteBtn">Deaktivovat</button>
+              <button className="deleteBtn" onClick={deleteItem}>
+                Deaktivovat
+              </button>
             </div>
 
             <div className="mailBtnElm">
