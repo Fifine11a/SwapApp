@@ -15,7 +15,7 @@ const ItemDeletedBtn = () => {
 
   return (
     <button onClick={deleteItem}>
-      {deleted ? 'Předmět odstraněn' : 'Odstranit předmět'}
+      {deleted ? 'Předmět odstraněn' : 'Odstranit'}
     </button>
   );
 };
