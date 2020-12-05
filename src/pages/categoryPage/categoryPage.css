@@ -2,11 +2,25 @@
   margin-top: 160px;
 }
 .category {
-  width: 33%;
+  width: unset;
+  margin-right: 20px;
+}
+.categoryBtns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 20px;
+}
+
+.categoryBtns button {
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
-  .itemsOverviewElm {
+  .itemsOverviewElm,
+  .categoryBtns {
     width: 992px;
     margin: 0 auto;
   }
