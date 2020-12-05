@@ -6,6 +6,7 @@ import towns from '../../data/towns.json';
 import './itemDetailPage.css';
 import CategoryDetail from '../categoryDetailPage/categoryDetailPage';
 import ItemsOverview from '../../itemOverview/itemOverview';
+import firebase from 'firebase';
 
 const ItemDetail = () => {
   const { id } = useParams();
@@ -25,6 +26,14 @@ const ItemDetail = () => {
   }
 
   const city = towns.find((city) => city.id === parseInt(product.cityId));
+
+  const bookItem = (e) => {
+    db.collection('items')
+      .doc(`${id}`)
+      .update({
+        status: firebase.firestore.FieldValue.arrayUnion(`booked`),
+      });
+  };
 
   return (
     <>
@@ -50,6 +59,12 @@ const ItemDetail = () => {
             </div>
             <div className="userNameElm">
               <span className="userName">{product.userName}</span>
+            </div>
+            <div className="itemStatusBtnElm">
+              <button className="bookedBtn" onClick={bookItem}>
+                Rezervovat
+              </button>
+              <button className="deleteBtn">Deaktivovat</button>
             </div>
 
             <div className="mailBtnElm">
