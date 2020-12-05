@@ -175,6 +175,7 @@ const NewForm = (props) => {
             <div>
               Lokalita, kde se uskuteční výměna *
               <select
+                required
                 value={cityId}
                 onChange={(event) => setCityId(event.target.value)}
               >
