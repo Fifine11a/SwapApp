@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import homepageImg from '../../img/homepage.jpeg';
@@ -7,6 +7,10 @@ import velkeLogo from '../../img/logo.png';
 import ItemsOverview from '../../itemOverview/itemOverview.jsx';
 
 const HomePage = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="mainPage">
       <img className="logo_velke" src={velkeLogo} alt="SwapApp logo" />
