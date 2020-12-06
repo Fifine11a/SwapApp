@@ -12,6 +12,12 @@ const AboutUs = () => {
     <div className="aboutUsPage">
       <h1>SwapApp by Marie&Magdalena</h1>
       <p>
+        Jsme Marie&Magdalena a tohle je první a zatím jediný swapovací web v
+        Čechách. Vytvořily jsme ho s láskou pro lidi, jako jsme my. Kteří
+        nepotřebné věci raději pošlou dál, než vyhodí. Kteří si potřebné věci
+        raději pořídí z druhé ruky, než nové.
+      </p>
+      <p>
         Tahle aplikace je náš absolventský projekt v rámci podzimního běhu
         Digitální akademie:Web 2020.
       </p>

@@ -14,12 +14,6 @@ const HomePage = (props) => {
   return (
     <div className="mainPage">
       <img className="logo_velke" src={velkeLogo} alt="SwapApp logo" />
-      {/* <p>
-        Jsme Marie&Magdalena a vítáme Tě na prvním a zatím jediném swapovacím
-        webu v Čechách. Vytvořily jsme ho s láskou pro lidi, jako jsme my. Kteří
-        nepotřebné věci raději pošlou dál, než vyhodí. Kteří si potřebné věci
-        raději pořídí z druhé ruky, než nové.
-      </p> */}
       <div className="homepageImgElm">
         <p>
           Ať už{' '}
