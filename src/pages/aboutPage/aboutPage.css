@@ -12,9 +12,18 @@
 .logoElm {
   width: 80%;
 }
+.logoElm a {
+  text-decoration: none;
+}
 .czechitasLogo,
 .pipedriveLogo {
-  width: 20%;
+  width: 50%;
+}
+@media screen and (min-width: 576px) {
+  .czechitasLogo,
+  .pipedriveLogo {
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 992px) {
