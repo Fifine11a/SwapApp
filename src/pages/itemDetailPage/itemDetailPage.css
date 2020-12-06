@@ -68,11 +68,8 @@
 .bookedItem img {
   filter: grayscale(100%);
 }
-.bookedItem img:before {
-  background-image: url(../../img/reserved.png);
-  background-repeat: no-repeat;
-  content: '';
-  width: 100%;
+.bookedItem h1 {
+  content: 'rezervováno -';
 }
 .itemTextElm {
   display: flex;

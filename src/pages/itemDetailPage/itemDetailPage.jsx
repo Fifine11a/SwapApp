@@ -82,7 +82,9 @@ const ItemDetail = () => {
 
             <div className="mailBtnElm">
               <a href={`mailto:${product.email}`}>
-                <button className="mailBtn">Chci swapnout</button>
+                <button className="mailBtn" title="Chci swapnout">
+                  <span>chci swapnout</span>
+                </button>
               </a>
             </div>
           </div>
