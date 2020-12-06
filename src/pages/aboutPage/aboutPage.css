@@ -20,7 +20,7 @@
 @media screen and (min-width: 992px) {
   .aboutUsPage {
     width: 992px;
-    margin: 20px;
+    margin: 0 auto;
     margin-top: 170px;
   }
 }

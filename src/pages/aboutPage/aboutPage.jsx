@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './aboutPage.css';
 import czechitas from '../../img/Czechitas.png';
 import pipedrive from '../../img/pipedrive.png';
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="aboutUsPage">
       <h1>SwapApp by Marie&Magdalena</h1>
