@@ -5,6 +5,7 @@
   margin: auto;
   list-style: none;
   letter-spacing: 0.1em;
+  padding: 0;
 }
 
 @media (min-width: 500px) {
