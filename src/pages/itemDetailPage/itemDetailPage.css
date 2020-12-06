@@ -12,6 +12,7 @@
   width: 16%;
   text-decoration: none;
   color: #212529;
+  max-height: 40px;
 }
 .backTo span {
   margin-left: 0;
