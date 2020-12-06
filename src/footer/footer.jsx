@@ -7,7 +7,7 @@ const Footer = (props) => {
     <div className="footer">
       <ul className="footer_list">
         <li className="footer_item">
-          <Link to="/">Homepage</Link>
+          <Link to="/kategorie">Hledat</Link>
         </li>
         <li className="footer_item">
           <Link to="/formular/novy">Nahrát předmět</Link>
