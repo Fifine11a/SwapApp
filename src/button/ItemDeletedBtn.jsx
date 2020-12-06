@@ -2,9 +2,9 @@ import db from '../firestore';
 import { useParams } from 'react-router-dom';
 import React, { useState } from 'react';
 
-const ItemDeletedBtn = () => {
+const ItemDeletedBtn = (props) => {
   const { id } = useParams();
-  const [deleted, setdeleted] = useState(false);
+  const [deleted, setdeleted] = useState(props.deleted);
 
   const deleteItem = (e) => {
     db.collection('items').doc(`${id}`).update({

@@ -54,9 +54,13 @@ const ItemDetail = () => {
           <h1>{product.title}</h1>
         </>
         <div
-          className="itemOfferDetails" /* {
-            deleted ? 'deletedItem' : booked ? 'bookedItem' : 'itemOfferDetails'
-          } */
+          className={
+            ItemDeletedBtn.deleted
+              ? 'deletedItem'
+              : ItemBookedBtn.booked
+              ? 'bookedItem'
+              : 'itemOfferDetails'
+          }
         >
           <img className="itemImg" src={product.imageUrl} />
           <div className="itemSubscription">
@@ -77,7 +81,7 @@ const ItemDetail = () => {
             </div>
             <div className="itemStatusBtnElm">
               <ItemBookedBtn booked={product.status === 'booked'} />
-              <ItemDeletedBtn />
+              <ItemDeletedBtn deleted={(product.status = false)} />
             </div>
 
             <div className="mailBtnElm">

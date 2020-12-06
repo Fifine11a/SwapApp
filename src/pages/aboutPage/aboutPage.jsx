@@ -30,16 +30,6 @@ const AboutUs = () => {
           <button className="mailBtn">Napište nám</button>
         </a>
       </div>
-      <span>
-        Homepage photo by{' '}
-        <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-          Jonathan Borba
-        </a>{' '}
-        on{' '}
-        <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-          Unsplash
-        </a>
-      </span>
     </div>
   );
 };
