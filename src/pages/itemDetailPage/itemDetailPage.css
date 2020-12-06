@@ -58,11 +58,21 @@
   flex-direction: row;
   margin: 10px 0;
 }
-.itemOfferDetails img {
+.itemOfferDetails img,
+.bookedItem img {
   width: 100%;
   object-fit: contain;
   object-position: 50% 0;
   max-height: 400px;
+}
+.bookedItem img {
+  filter: grayscale(100%);
+}
+.bookedItem img:before {
+  background-image: url(../../img/reserved.png);
+  background-repeat: no-repeat;
+  content: '';
+  width: 100%;
 }
 .itemTextElm {
   display: flex;
@@ -88,17 +98,6 @@
 .deletedItem img {
   filter: grayscale(100%);
 }
-.bookedItem:before {
-  content: '';
-  background-image: url(../../img/reserved.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 50%;
-  bottom: -160px;
-  position: absolute;
-}
 
 @media screen and (min-width: 576px) {
   .itemOfferDetails,
@@ -106,23 +105,13 @@
     display: flex;
     flex-direction: row;
   }
-  /* .backTo {
-    flex-direction: column-reverse;
-  }
-  .backTo span {
-    margin-left: 30px;
-    margin-bottom: -10px;
-  } */
-  .itemOfferDetails img {
+  .itemOfferDetails img,
+  .bookedItem img {
     width: 50%;
   }
   .itemSubscription {
     margin-left: 10px;
     width: 40%;
-  }
-
-  .bookedItem:before {
-    bottom: -170px;
   }
 }
 @media screen and (min-width: 992px) {
