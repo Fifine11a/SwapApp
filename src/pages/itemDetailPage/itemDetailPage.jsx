@@ -55,11 +55,7 @@ const ItemDetail = () => {
         </>
         <div
           className={
-            ItemDeletedBtn.deleted
-              ? 'deletedItem'
-              : ItemBookedBtn.booked
-              ? 'bookedItem'
-              : 'itemOfferDetails'
+            product.status === 'booked' ? 'bookedItem' : 'itemOfferDetails'
           }
         >
           <img className="itemImg" src={product.imageUrl} />
@@ -81,7 +77,7 @@ const ItemDetail = () => {
             </div>
             <div className="itemStatusBtnElm">
               <ItemBookedBtn booked={product.status === 'booked'} />
-              <ItemDeletedBtn deleted={(product.status = false)} />
+              <ItemDeletedBtn deleted={product.status === 'deactivated'} />
             </div>
 
             <div className="mailBtnElm">
