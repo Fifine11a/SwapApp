@@ -16,13 +16,8 @@ const AboutUs = () => {
         Digitální akademie:Web 2020.
       </p>
       <p>
-        Děkujeme Czechitas
-        {/* {' '}
-        <a href="https://www.czechitas.cz/cs/">
-          <img src={czechitas} alt="logo Czechitas" />
-        </a>{' '} */}
-        za organizaci, Martinovi, Filipům, Sergejovi, Petrovi a spol za
-        lektorování a koučování.
+        Děkujeme Czechitas za organizaci, Martinovi, Filipům, Sergejovi, Petrovi
+        a spol za lektorování a koučování.
       </p>
       <p>
         Děkujeme Leně a Zuzce a všem ostatním holkám za skvělou atmosféru a
