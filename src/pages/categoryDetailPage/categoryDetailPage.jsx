@@ -4,9 +4,7 @@ import ItemPreview from '../../itemPreview/itemPreview';
 import db from '../../firestore.js';
 import leftBullet from '../../img/left_li_bullet.png';
 import { Link } from 'react-router-dom';
-
 import './categoryDetailPage.css';
-import Breadcrumbs from '../../breadcrumbs/breadcrumbs';
 
 const CategoryDetail = (props) => {
   let { id } = useParams();
@@ -44,7 +42,6 @@ const CategoryDetail = (props) => {
       </Link>
       <h1>{category.name}</h1>
 
-      {/* <Breadcrumbs /> */}
       <div className="categoryDetailElm">
         {(category.items ?? []).map((item) => (
           <ItemPreview key={item.id} id={item.id} />
