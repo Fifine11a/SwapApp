@@ -11,6 +11,7 @@ const ItemDeletedBtn = (props) => {
       status: `deactivated`,
     });
     setdeleted(true);
+    props.onDeleted(true);
   };
 
   return (

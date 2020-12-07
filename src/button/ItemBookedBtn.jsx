@@ -11,6 +11,7 @@ const ItemBookedBtn = (props) => {
       status: `active`,
     });
     setBooked(false);
+    props.onBooked(false);
   };
 
   const bookItem = (e) => {
@@ -18,6 +19,7 @@ const ItemBookedBtn = (props) => {
       status: `booked`,
     });
     setBooked(true);
+    props.onBooked(true);
   };
 
   return (

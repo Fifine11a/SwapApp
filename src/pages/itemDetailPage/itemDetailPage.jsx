@@ -43,6 +43,22 @@ const ItemDetail = () => {
 
   const city = towns.find((city) => city.id === parseInt(product.cityId));
 
+  const handleDeleted = (isDeleted) => {
+    const productCopyDlt = { ...product };
+
+    productCopyDlt.status = 'deactivated';
+
+    setProduct(productCopyDlt);
+  };
+
+  const handleBooked = (isBooked) => {
+    const productCopy = { ...product };
+
+    productCopy.status = isBooked ? 'booked' : 'active';
+
+    setProduct(productCopy);
+  };
+
   return (
     <>
       <div className="itemPage">
@@ -51,11 +67,15 @@ const ItemDetail = () => {
           <span>kategorie</span>
         </Link>
         <>
-          <h1>{product.title}</h1>
+          <h1>
+            {`${product.status}` === 'booked'
+              ? `${product.title} - rezervováno`
+              : `${product.title}`}
+          </h1>
         </>
         <div
           className={
-            /*product.status === 'booked' ? 'bookedItem' : */ 'itemOfferDetails'
+            product.status === 'active' ? 'itemOfferDetails' : 'bookedItem'
           }
         >
           <img className="itemImg" src={product.imageUrl} />
@@ -76,8 +96,14 @@ const ItemDetail = () => {
               <span className="userName">{product.userName}</span>
             </div>
             <div className="itemStatusBtnElm">
-              <ItemBookedBtn booked={product.status === 'booked'} />
-              <ItemDeletedBtn deleted={product.status === 'deactivated'} />
+              <ItemBookedBtn
+                onBooked={handleBooked}
+                booked={product.status === 'booked'}
+              />
+              <ItemDeletedBtn
+                onDeleted={handleDeleted}
+                deleted={product.status === 'deactivated'}
+              />
             </div>
 
             <div className="mailBtnElm">
