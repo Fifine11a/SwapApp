@@ -55,7 +55,7 @@ const ItemDetail = () => {
         </>
         <div
           className={
-            product.status === 'booked' ? 'bookedItem' : 'itemOfferDetails'
+            /*product.status === 'booked' ? 'bookedItem' : */ 'itemOfferDetails'
           }
         >
           <img className="itemImg" src={product.imageUrl} />
